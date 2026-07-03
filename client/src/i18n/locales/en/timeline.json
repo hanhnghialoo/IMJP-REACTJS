@@ -1,0 +1,11 @@
+{
+    "timeline":"Timeline",
+    "consultation": "Consultation",
+    "application": "Application",
+    "assessment": "Assessment",
+    "result":"Result",
+    "complete":"Complete",
+    "active":"Active",
+    "pending":"Pending",
+    "rejected":"Rejected"
+}

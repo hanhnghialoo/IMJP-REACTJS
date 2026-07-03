@@ -1,0 +1,45 @@
+{
+
+    "personalInformation":"Personal information",
+    "contact":"Contact",
+    "fullname": "Full name",
+    "sex":"Gender",
+    "male":"Male",
+    "dateOfBirth":"Date of birth",
+    "female":"Female",
+    "phoneNumber": "Phone number",
+    "consultation": "Consulation",
+    "sourceChannel":"Source",
+    "batchCode":"Batch code",
+    "eligibility":"Eligibility",
+    "result":"Result",
+    "application":"Application",
+    "status":"Status",
+
+    "homeTown": "Hometown",
+    "address": "Address",
+    "province": "Province",
+    "newProvince": "New province",
+    "oldProvince": "Old province",
+    "familyMember": "Family member",
+    "email":"Email",
+    
+    "consultationInformation":"Consultation information",
+    "lastConsultation":"Last consultation",
+    "consultationDate":"Date consultation",
+    "preference":"Preference",
+    "note":"Notes",
+    "personalCharacteristics":"Personal characteristics",
+    "reason":"Reason",
+
+    "documentStatus":"Document status",
+    "submissionDate": "Submission date ",
+    "submissionMethod":"Submission method",
+    "recordedDate":"Recorded date",
+    "postalService":"Postal service",
+    "esc":"Employment service center",
+    "other":"Other",
+
+    "timeline":"Time line",
+    "candidate":"Candidate"
+}

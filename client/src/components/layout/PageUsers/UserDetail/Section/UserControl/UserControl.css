@@ -1,0 +1,37 @@
+.user-control-content{
+    border: 1px solid #e8e7e7;
+    background-color: rgba(221, 50, 50, 0.143) ;
+    border-radius: 10px;
+    padding: 16px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:14px;
+}
+.user-control-caption{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.user-control-action{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap:10px;
+}
+
+.btn-reset-password-user,
+.btn-delete-user{
+    font-size: 12px;
+    font-weight: 400;
+    flex:1;
+    background-color: #ffffff;
+}
+
+.btn-reset-password-user svg,
+.btn-delete-user svg{
+    color: red;
+    width: auto;
+    height: 15px;
+}

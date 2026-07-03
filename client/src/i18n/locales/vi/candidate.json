@@ -1,0 +1,46 @@
+{
+    "personalInformation":"Thông tin cá nhân",
+    "contact":"Liên hệ",
+    "fullname": "Họ và tên",
+    "sex":"Giới tính",
+    "male":"Nam",
+    "female":"Nữ",
+    "dateOfBirth":"Ngày sinh",
+    "phoneNumber": "SĐT",
+    "consultation": "Tư vấn",
+    "sourceChannel":"Kênh tiếp cận",
+    "batchCode":"Khoá thi",
+    "eligibility":"Điều kiện",
+    "result":"Kết quả",
+    "application":"Hồ sơ",
+    "status":"Trạng thái",
+
+    "homeTown": "Quê quán",
+    "address": "Địa chỉ",
+    "province": "Tỉnh thành",
+    "newProvince": "Tỉnh thành mới",
+    "oldProvince": "Tỉnh thành trước sáp nhập",
+    "familyMember": "Người thân",
+    "email":"Email",
+
+    "consultationInformation":"Thông tin tư vấn",
+    "lastConsultation":"Tư vấn lần cuối",
+    "consultationDate":"Thời gian tư vấn",
+    "preference":"Nguyện vọng",
+    "note":"Ghi chú",
+    "personalCharacteristics":"Đặc điểm cá nhân",
+
+    "reason":"Lý do",
+
+    "documentStatus":"Tình trạng hồ sơ",
+    "submissionDate": "Ngày gửi",
+    "submissionMethod":"Hình thức nộp hồ sơ",
+    "recordedDate":"Ngày ghi nhận",
+    "postalService":"Bưu điện",
+    "esc":"Trung tâm tư vấn dịch vụ việc làm",
+    "other":"Khác",
+
+    "timeline":"Tiến trình",
+    "candidate":"Ứng viên"
+
+}

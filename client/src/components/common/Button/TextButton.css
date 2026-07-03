@@ -1,0 +1,33 @@
+.text-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: #028ece;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.text-btn:hover{
+    text-decoration: underline;
+}
+
+
+.text-btn-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.text-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+}

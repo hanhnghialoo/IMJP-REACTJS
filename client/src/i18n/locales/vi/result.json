@@ -1,0 +1,11 @@
+{
+    "empty":"Trống",
+    "assessment":"Thi tuyển",
+    "passed":"Trúng tuyển",
+    "failedRetest":"Trượt-Thi lại",
+    "failedNonRetest":"Trượt-Không thi lại",
+    "postponed":"Hoãn thi",
+    "absent":"Không tham gia",
+    "enrolled":"Nhập học",
+    "notEnrolled":"Không nhập học"
+}

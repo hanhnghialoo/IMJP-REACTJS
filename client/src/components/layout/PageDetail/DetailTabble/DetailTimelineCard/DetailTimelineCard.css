@@ -1,0 +1,134 @@
+.detail-timeline-card{
+    background-color: #f3f4fa;
+    border-radius: 12px;
+    padding: 24px 12px 20px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #e8e8ec;
+}
+.detail-timeline-title{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #1ca3ec;
+    font-weight: 600;
+    gap:6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.detail-timeline-list{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.detail-timeline-item{
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+}
+.detail-timeline-left{
+    position: relative;
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-timeline-line{
+    position: absolute;
+    top:18px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: calc(100% + 40px);
+    border-radius: 999px;
+}
+
+
+.detail-timeline-line.complete{
+    background: #22c55e;
+}
+.detail-timeline-line.current{
+    background: #d1d5db;
+}
+.detail-timeline-line.pending{
+    background: #d1d5db;
+}
+.detail-timeline-line.rejected{
+    background: #d1d5db;
+}
+.detail-timeline-line.warning{
+    background: #d1d5db;
+}
+
+.detail-timeline-label{
+    font-weight: 400;
+    margin-top: -3px;
+}
+.detail-timeline-description{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+.detail-timeline-time{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.detail-timeline-divider{
+    background: rgba(0, 0, 0, 0.1);
+    margin: 20px 0 20px 0;
+    height: 1px;
+}
+.detail-timeline-note{
+    font-size: 10px;
+    display: flex;
+    gap:10px;
+}
+
+.badge-detail-timeline-item.complete svg{
+    color: #22c55e;
+}
+.badge-detail-timeline-item.complete{
+    gap:4px;
+}
+
+.badge-detail-timeline-item.active svg{
+    color: #3b82f6;
+}
+.badge-detail-timeline-item.active{
+    gap:4px;
+}
+
+.badge-detail-timeline-item.pending svg{
+    color: #d1d5db;
+}
+.badge-detail-timeline-item.pending{
+    gap:4px;
+}
+
+.badge-detail-timeline-item.rejected svg{
+    color: #ef4444;
+}
+.badge-detail-timeline-item.warning svg{
+    color: #ffc107;
+}
+.badge-detail-timeline-item.rejected{
+    gap:4px;
+}
+
+.detail-timeline-item.active-view{
+    background: #c0dffa;
+    border: 1px solid #b6d8ff;
+    box-shadow:
+        0 4px 12px rgba(33,150,243,.08);
+    border-radius: 15px;
+}

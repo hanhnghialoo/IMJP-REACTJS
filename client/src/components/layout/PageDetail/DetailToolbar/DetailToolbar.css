@@ -1,0 +1,10 @@
+.detail-toolbar-content{
+    display: flex;
+    gap:12px;
+    justify-content: flex-end;
+    flex: 1;
+}
+.btn-detail-toolbar-delete{
+    height: 36px;
+    font-size: 14px;
+}

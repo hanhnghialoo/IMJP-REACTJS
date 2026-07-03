@@ -1,0 +1,11 @@
+{
+    "candidateName":"Tên ứng viên...",
+    "homeTown": "Quê quán...",
+    "status": "Trạng thái...",
+    "addCandidate": "Thêm mới ứng viên",
+    "search": "Tìm kiếm",
+    "candidateList": "Danh sách ứng viên",
+    "deleteCandidate":"Xoá ứng viên",
+    "searchAdvance":"Tìm kiếm nâng cao",
+    "searchBy":"Tìm kiếm theo tên, khoá thi, quê quán, kênh tiếp cận,..."
+}

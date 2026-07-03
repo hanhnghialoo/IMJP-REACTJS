@@ -1,0 +1,69 @@
+.text-area-group{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.text-area-label{
+    font-size: 14px;
+    font-weight: 300;
+}
+.text-area-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text-area-start-icon{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    pointer-events: none;
+}
+.text-area-end-icon{
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    pointer-events: none;
+}
+.text-area-field{
+    width: 100%;
+    padding: 0 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #292929;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+.text-area-field:focus {
+    border-color: #1ca3ec;
+    box-shadow:
+        0 0 0 5px rgba(28, 163, 236, 0.15);
+}
+.text-area-field::placeholder {
+    color: #98a2b3;
+}
+.text-area-field:disabled {
+    background: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.text-area-start-icon.primary{
+    color:#119feb;
+}

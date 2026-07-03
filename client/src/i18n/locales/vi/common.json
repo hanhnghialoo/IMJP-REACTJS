@@ -1,0 +1,29 @@
+{
+    "empty":"Trống",
+    "submitted":"Đã gửi",
+    "unsubmitted":"Chưa gửi",
+    "detail": "Chi tiết",
+    "show": "Hiển thị",
+    "candidate": "Ứng viên",
+
+    "page":"Trang",
+    "previousPage": "Trang trước",
+    "nextPage": "Trang sau",
+    "total":"Tổng",
+     "detailCandidate": "Thông tin chi tiết ứng viên",
+     "lastUpdatedBy":"Thông tin ứng viên được cập nhật lần cuối bởi",
+     "cancel":"Huỷ",
+     "save":"Lưu",
+     "create":"Thêm mới",
+
+    "any": "Bất kì",
+    "users": "Người dùng",
+    "sortAZ":"Sắp xếp A-Z",
+    "sortZA":"Sắp xếp Z-A",
+
+    "sortByNew":"Sắp xếp thời gian gần nhất",
+    "sortByOld":"Sắp xếp thời gian xa nhất"
+
+
+    
+}

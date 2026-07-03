@@ -1,0 +1,5 @@
+.modal-search-row-top{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}

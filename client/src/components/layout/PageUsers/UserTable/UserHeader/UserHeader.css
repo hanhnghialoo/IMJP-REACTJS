@@ -1,0 +1,20 @@
+.user-header{
+    display: grid;
+    grid-template-columns: 
+        var(---user-col-no)
+        var(---user-col-info)
+        var(---user-col-role)
+        var(---user-col-email)
+        var(---user-col-status)
+        var(---user-col-status);
+    flex-direction: row;
+    height: 84px;
+    align-items: center;
+}
+
+.user-header-title.no{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    padding-left: 12px;
+}

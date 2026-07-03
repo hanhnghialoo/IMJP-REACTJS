@@ -1,0 +1,18 @@
+.user-toolbar-content{
+    display: flex;
+    gap:12px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.btn-add-new-user{
+    height: 36px;
+    font-size: 14px;
+    border-radius: 14px;
+}
+
+.input-user-toolbar-search{
+    font-size: 14px;
+    width:300px;
+    background-color: #f4f5f9;
+}

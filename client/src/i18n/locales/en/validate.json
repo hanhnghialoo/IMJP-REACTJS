@@ -1,0 +1,9 @@
+{
+    "fullNameRequired":"Full name is required",
+    "usernameRequired":"Username is required ",
+    "usernameMinCharacters":"Minimum 4 characters required",
+    "emailRequired":"Email is required",
+    "invalidEmail":"Invalid email",
+    "fullNameOnlyLetters":"Full name is only letters"
+
+}

@@ -1,0 +1,33 @@
+.badge-primary{
+    color: #008cd7;
+}
+.badge-danger{
+    color:red;
+}
+.badge-success{
+    color: green;
+}
+.badge-warning{
+    color: yellow;
+}
+.badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+.badge-start-icon,
+.badge-end-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.badge-label{
+    display: flex;
+    align-items: center;
+}

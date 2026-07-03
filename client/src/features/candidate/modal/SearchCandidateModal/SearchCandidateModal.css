@@ -1,0 +1,130 @@
+.modal-search-card{
+    position: fixed;
+    display: flex;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.modal-search-content{
+    background-color: #ffffff;
+    width: auto;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        -8px 0 24px rgba(0,0,0,.12);
+    padding: 10px 34px 0 34px;
+}
+.modal-search-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-close-modal-search{
+    color: #00a0e9;
+    font-size: 28px;
+    display: flex;
+    border-radius: 100%;
+    padding: 0;
+    margin-top: -20px;
+    height: auto;
+}
+.btn-close-modal-search:hover{
+    background: #00a0e9;
+    color: #ffffff;
+}
+
+.modal-search-title{
+    color: #119feb;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.modal-search-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 18px 0 18px 0;
+}
+.modal-search-child-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+.modal-search-middle{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.modal-search-middle-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:6px;
+    font-size: 15px;
+    color: #119feb;
+}
+.modal-search-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 30px 0;
+    gap: 50px;
+}
+.modal-search-group-right{
+    display: flex;
+    flex-direction: row;
+    gap:16px;
+}
+.btn.cancel-search-modal{
+    width: 134px;
+    font-size: 14px;
+}
+.btn.confirm-search-modal{
+    width:134px;
+    font-size: 14px;
+    gap:6px;
+}
+.btn.reset-search-modal{
+    width:134px;
+    font-size: 14px;
+    gap:6px;
+}
+.btn.confirm-search-modal svg{
+    height: 20px;
+    width: auto;
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(100%);
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+.modal-search-content{
+    animation: slideDown 0.25s ease;
+}
+
+
+.input-search,
+.select-field{
+    font-size: 14px;
+    background-color:rgb(241, 241, 241);
+}
+
+.input-search,
+.select-search{
+    width: 220px;
+}

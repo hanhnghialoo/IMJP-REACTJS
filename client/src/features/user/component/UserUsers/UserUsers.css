@@ -1,0 +1,12 @@
+.total-users-card-icon{
+    color: #d2d2c7;
+}
+.total-users-card-icon svg{
+    width: auto;
+    height: 25px;
+}
+.page-user-dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:20px;
+ }

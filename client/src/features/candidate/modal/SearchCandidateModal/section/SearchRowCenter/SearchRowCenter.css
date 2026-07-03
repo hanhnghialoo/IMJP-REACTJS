@@ -1,0 +1,55 @@
+.modal-search-row-center{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.modal-search-row-card-one{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.modal-search-row-card-two{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+
+.badge-search-modal-source-channel{
+    width: 220px;
+    height:40px;
+    justify-content: space-between;
+    background-color:rgb(241, 241, 241);
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 12px 0 12px;
+}
+.dropdown-select-label{
+    font-size: 14px;
+    color: #6f757e;
+    margin-bottom: 6px;
+}
+.dropdown-select-content.open{
+    margin-bottom: -10px;
+    background-color: #ffffff;
+}
+
+.search-date-consultation{
+    width: 150px;
+}
+.custom-date-range{
+    display: flex;
+    flex-direction: row;
+    gap:4px;
+    margin-left: -36px;
+}
+.input-search-date-from,
+.input-search-date-to{
+    background-color:rgb(241, 241, 241);
+    font-size: 14px;
+    width: 125px;
+}
+.group-search-timeline{
+    width: 150px;
+}

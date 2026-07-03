@@ -1,0 +1,15 @@
+.btn-language-switcher{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:16px;
+}
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:6px;
+}
+.icon-country{
+    font-size: 16px;
+}

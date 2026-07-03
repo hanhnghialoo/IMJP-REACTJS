@@ -1,0 +1,7 @@
+.brand-section{
+    display: flex;
+    align-items: center;
+    height: 65px;
+    padding: 4px;
+    margin-left: 12px;
+}

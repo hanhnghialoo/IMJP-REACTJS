@@ -1,0 +1,21 @@
+.candidate-document{
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    padding: 0 0 0 12px;
+}
+.candidate-document.active{
+    background-color: #ebebeb;
+}
+.badge-candidate-document{
+    gap:2px;
+}
+
+.candidate-document:hover{
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+.badge-candidate-document-empty{
+    opacity: 0.3;
+}

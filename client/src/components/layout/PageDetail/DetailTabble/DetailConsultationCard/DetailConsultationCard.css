@@ -1,0 +1,91 @@
+.detail-consultation-card{
+    background: #eef7ff;
+    border-radius: 12px;
+    padding: 20px 12px 20px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #b6d8ff;
+    position: relative;
+    flex:1;
+}
+
+.btn-edit-candidate.consultation{
+    top:2%;
+}
+
+.detail-consultation-title{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 16px;
+    color: #1ca3ec;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.detail-item-card.note,
+.detail-item-card.preference,
+.detail-item-card.character{
+    min-height: 68px;
+    grid-template-columns: 140px 20px 1fr;
+}
+
+.detail-item-card.date{
+    margin-top: 10px;
+    grid-template-columns: 140px 20px 1fr;
+}
+.detail-item-card.detail-status{
+    grid-template-columns: 140px 20px 1fr;
+}
+
+.detail-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.detail-consultation-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-consultation-status-badge{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0 14px 0;
+    font-weight: 500;
+    padding: 0 8px 0 8px;
+}
+
+.badge-candidate-status-detail{
+    gap:10px;
+}
+
+.badge-candidate-eligible.detail{
+    color: rgb(46, 153, 46);
+    border-radius: 20px;
+    border: 1px solid #e2e2e2; 
+    background: #dff9e9;
+    padding: 0 20px 0 20px;
+}
+
+.badge-candidate-ineligible.detail{
+    color: #dd2121;
+    border-radius: 20px;
+    border: 1px solid #e2e2e2; 
+    background: #f1dddd;
+    padding: 0 20px 0 20px;
+}
+
+.badge-candidate-pending.detail{
+    color: #c7ad77;
+    border-radius: 20px;
+    border: 1px solid #e2e2e2; 
+    background: #fff3d6;
+    padding: 0 20px 0 20px;
+}
+

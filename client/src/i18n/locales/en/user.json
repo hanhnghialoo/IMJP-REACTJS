@@ -1,0 +1,32 @@
+{
+    "status":"Status",
+    "totalUsers": "Total Users",
+    "totalAdmin": "Admin",
+    "totalManager": "Manager",
+    "totalUser": "User",
+    "onlineUsers":"Online",
+    "online":"Online",
+    "offline":"Offline",
+    "lastActive":"Last active",
+    "minago":"min ago",
+    "hourago":"hour ago",
+    "dayago":"day ago",
+    "neverActive":"Never active",
+
+    "searchBy":"Search by name, role",
+
+    "addUser":"Add user",
+
+    "userControl":"User controls",
+    "noUserSelected":"No user selected",
+    "userCaption":"Select a user from the list to view and edit their information",
+
+    "userControlCaption":"These actions cannot be undone. Please make sure before proceeding.",
+    "resetPassword":"Reset password",
+    "lockAccount":"Lock account",
+    "deleteUser":"Delete user"
+
+
+
+    
+}

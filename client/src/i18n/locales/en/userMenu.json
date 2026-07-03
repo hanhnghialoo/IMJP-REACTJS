@@ -1,0 +1,14 @@
+{
+    "profile": "Profile",
+    "changePassword": "Change password",
+    "userList": "User list",
+    "addUser":"Create user",
+    "fullName":"Full name",
+    "email":"Email",
+    "phoneNumber":"Phone number",
+    "userName":"Username",
+    "userRole":"User role",
+    "status":"Status"
+
+
+}

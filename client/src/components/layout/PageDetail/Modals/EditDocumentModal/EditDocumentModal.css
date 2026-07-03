@@ -1,0 +1,9 @@
+.select-modal.gender,
+.select-modal.province{
+    border: 1px solid #e6e6e6;
+}
+
+.text-area.note,
+.text-area.note-status{
+    resize: vertical;
+}

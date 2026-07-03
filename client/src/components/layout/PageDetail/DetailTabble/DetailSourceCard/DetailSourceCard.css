@@ -1,0 +1,86 @@
+.detail-source-card{
+    background-color: #f3f4fa;
+    border-radius: 12px;
+    padding: 24px 12px 24px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #e8e8ec;
+    position: relative;
+}
+
+.detail-item-card.source{
+    grid-template-columns: 100px 20px 1fr;
+    align-items: center;
+    height: 50px;
+}
+
+.detail-value-card.source{
+    display: flex;
+    align-items: center;
+}
+
+.badge-candidate-source{
+    gap:4px;
+    padding: 4px 4px 4px 4px;
+    width:180px;
+}
+.badge-candidate-source-input{
+    background-color: #e6e6e6;
+    max-width: 200px;
+    min-width: 150px;
+    font-size: 12px;
+    gap:4px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 20px;
+    border: 1px solid #dcdcdc;
+}
+.badge-candidate-source-input:hover{
+    background-color: #5bb5e5;
+    color: #ffffff;
+    cursor: pointer;
+}
+.badge-option-select-source{
+    gap:6px;
+    line-height: 2.2;
+    padding: 2px 4px 2px 4px;
+}
+.btn-edit-candidate.source.active{
+    display: none;
+}
+.btn-save-source{
+    color: #00a0e9;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:5%;
+    right:12%;
+}
+.btn-cancel-source{
+    color: #00a0e9;
+    background-color: #ffffff;
+    border: 1px solid #ebebeb;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:5%;
+    right:2%;
+}
+
+.btn-save-source:hover,
+.btn-cancel-source:hover{
+    color: #ffffff;
+    background-color: #00a0e9;
+}

@@ -1,0 +1,10 @@
+{
+    "agreed":"Agreed",
+    "considering":"Considering",
+    "notInterested":"Not Interested",
+    "undecided":"Undecided",
+    "familyApproval":"Family approval",
+    "consultationStatus": "Consultation status",
+    "consultationResult":"Consultation result",
+    "detailStatus":"Detail status"
+}

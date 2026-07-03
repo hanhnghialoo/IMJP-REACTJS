@@ -1,0 +1,20 @@
+{
+    "reset":"Đặt lại",
+    "search":"Tìm kiếm",
+    "ageRanger":"Khoảng độ tuổi",
+    "personalInformation": "Thông tin cá nhân",
+    "region":"Khu vực",
+    "north":"Miền Bắc",
+    "central": "Miền Trung",
+    "south":"Miền Nam",
+    "today":"Hôm nay",
+    "yesterday":"Hôm qua",
+    "last7Days":"7 ngày qua",
+    "last30Days":"30 ngày qua",
+    "thisMonth":"Tháng này",
+    "lastMonth":"Tháng trước",
+    "customRange":"Tuỳ chọn",
+    "fromDate":"Từ",
+    "fromTo":"Đến"
+
+}

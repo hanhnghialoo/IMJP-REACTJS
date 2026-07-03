@@ -1,0 +1,35 @@
+.detail-item {
+    display: grid;
+    grid-template-columns: 200px 34px 1fr;
+    align-items: center;
+}
+.detail-label {
+    color: #6b7280;
+}
+.detail-separator {
+    text-align: center;
+}
+.detail-value {
+    color: #111827;
+}
+
+.expanded-enter{
+    animation: expandDetail 350ms ease-out forwards;
+}
+
+@keyframes expandDetail{
+    from{
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.candidate-expanded-row{
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    background-color: #e5eff8c0;
+}

@@ -1,0 +1,13 @@
+.candidate-expanded-consultation-detail{
+    padding: 16px 50px 16px 50px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    background: #ffffff;
+    margin: 20px 40px 20px 40px;
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, auto);
+    gap:12px 50px;
+}

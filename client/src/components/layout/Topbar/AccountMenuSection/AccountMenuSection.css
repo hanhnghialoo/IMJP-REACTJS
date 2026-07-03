@@ -1,0 +1,39 @@
+.account-menu-section{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-account-menu{
+    height: 30px;
+    font-size: 14px;
+    min-width: 10px;
+    justify-content:flex-start;
+    background-color: #f6f6f6;
+    color: #0195d9;
+}
+.btn-account-menu:hover{
+    background-color: #0195d9;
+    color: #f7f7f7;
+}
+
+.btn-trigger,
+.btn-not-trigger
+{
+    color: #00a0e9;
+    transition:
+        transform 0.25s ease,
+        background-color 0.2s ease;
+}
+
+.btn-trigger svg{
+    transition: transform 0.5s ease;
+}
+
+.btn-trigger.open svg{
+    transform: rotate(180deg);
+}
+
+.btn-trigger:hover{
+    background-color: rgba(0,0,0,0.05);
+}

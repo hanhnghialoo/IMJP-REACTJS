@@ -1,0 +1,15 @@
+.candidate-meta-info{
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+
+.badge-dateOfBirth{
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.badge-homeTown{
+    font-size: 12px;
+    font-weight: 200;
+}

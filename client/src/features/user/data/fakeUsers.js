@@ -1,0 +1,73 @@
+import { ROLES } from "../../auth/constants/role";
+
+export const fakeUsers = [
+    {
+        id: 1,
+        fullName:'Hoàng Đức Hạnh',
+        email: 'hanh.hoangduc98@gmail.com',
+        phoneNumber:'0395602345',
+        username:'hanhnghialo',
+        role:ROLES.ADMIN,
+        lastActivityAt:"2026-06-29T00:40:00Z",
+    },
+    {
+        id: 2,
+        fullName:'Trần Phương Diệu Linh',
+        email: 'linh.tranphuongdieu@gmail.com',
+        phoneNumber:'0915000915',
+        username:'tranphuongdieulinh',
+        role:ROLES.MANAGER,
+        lastActivityAt:"2026-07-01T23:10:00Z",
+
+    },
+    {
+        id: 3,
+        fullName:'Nguyễn Văn A',
+        email: 'a.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvana',
+        role:ROLES.MANAGER,
+        lastActivityAt:"2026-06-25T00:40:00Z",
+    },
+    {
+        id: 4,
+        fullName:'Nguyễn Văn B',
+        email: 'b.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvanb',
+        role:ROLES.MANAGER,
+        lastActivityAt:"2026-06-28T18:00:00Z",
+    },
+    {
+        id: 5,
+        fullName:'Nguyễn Văn C',
+        email: 'c.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvanc',
+        role:ROLES.USER,
+    },
+    {
+        id: 6,
+        fullName:'Nguyễn Văn D',
+        email: 'd.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvand',
+        role:ROLES.USER,
+    },
+    {
+        id: 7,
+        fullName:'Nguyễn Văn E',
+        email: 'e.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvand',
+        role:ROLES.USER,
+    },
+    {
+        id: 8,
+        fullName:'Nguyễn Văn F',
+        email: 'f.nguyenvan@gmail.com',
+        phoneNumber:'0123456789',
+        username:'nguyenvand',
+        role:ROLES.USER,
+    },
+]

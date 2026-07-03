@@ -1,0 +1,12 @@
+{
+    "profile": "Thông tin cá nhân",
+    "changePassword": "Đổi mật khẩu",
+    "userList": "Danh sách người dùng",
+    "addUser":"Thêm người dùng",
+    "fullName":"Họ và tên",
+    "email":"Email",
+    "phoneNumber":"SĐT",
+    "userName":"Tên đăng nhập",
+    "userRole":"Vai trò",
+    "status":"Trạng thái"
+}

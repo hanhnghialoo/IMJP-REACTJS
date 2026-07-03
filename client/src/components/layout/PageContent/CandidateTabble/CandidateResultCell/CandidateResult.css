@@ -1,0 +1,51 @@
+.candidate-result{
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.result\:passed{
+    color:#22c55e;
+}
+.result\:absent{
+    color: #9ca3af;
+}
+.result\:failedRetest{
+    color: #e19106;
+}
+.result\:failedNonRetest{
+    color: #ef4444;
+}
+.result\:postponed{
+    color: #ffc001;
+}
+.result\:enrolled{
+    color: #3b82f6;
+}
+.result\:notEnrolled{
+    color: #64748b;
+}
+.common\:empty{
+    color: #ffffff;
+}
+.badge-common\:empty{
+    opacity: 0.3;
+}
+
+.candidate-result:hover{
+    cursor: pointer;
+    transform: translateX(6px);
+}
+
+.badge-result\:passed.expanded,
+.badge-result\:absent.expanded,
+.badge-result\:failedRetest.expanded,
+.badge-result\:failedNonRetest.expanded,
+.badge-result\:postponed.expanded,
+.badge-result\:enrolled.expanded,
+.badge-result\:notEnrolled.expanded,
+.badge-common\:empty.expanded{
+    border-radius: 10px;
+}

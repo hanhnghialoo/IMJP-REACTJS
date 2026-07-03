@@ -1,0 +1,29 @@
+{
+    "status":"Trạng thái",
+    "totalUsers": "Tổng",
+    "totalAdmin": "Quản trị",
+    "totalManager": "Quản lý",
+    "totalUser": "Người dùng",
+    "onlineUsers":"Đang hoạt động",
+    "online":"Online",
+    "offline":"Offline",
+    "lastActive":"Hoạt động",
+    "minago":"phút trước",
+    "hourago":"giờ trước",
+    "dayago":"ngày trước",
+    "neverActive":"Chưa xác thực",
+    "searchBy":"Tìm kiếm tên, vai trò người dùng,...",
+
+    "addUser":"Thêm người dùng",
+
+    "userControl":"Bảng điều khiển",
+    "noUserSelected":"Không có người dùng nào được chọn",
+    "userCaption":"Chọn người dùng từ danh sách để chỉnh sửa thông tin",
+
+    "userControlCaption":"Các thao tác này không thể hoàn tác, hãy chắc chắn khi thực hiện",
+    "resetPassword":"Đặt lại mật khẩu",
+    "lockAccount":"Khoá tài khoản",
+    "deleteUser":"Xoá người dùng"
+
+    
+}

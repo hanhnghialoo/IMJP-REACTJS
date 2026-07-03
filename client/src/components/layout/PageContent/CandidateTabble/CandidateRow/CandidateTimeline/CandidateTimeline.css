@@ -1,0 +1,154 @@
+.candidate-timeline{
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 20px;
+    padding: 4px 0 4px 0;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.candidate-timeline-list{
+    display: flex;
+    flex:1;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.candidate-timeline-item{
+    position: relative;
+    height: 100%;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.candidate-timeline-item > *{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.timeline-left{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: center;
+}
+
+.timeline-icon{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index: 2;
+}
+.timeline-icon svg{
+    height:20px;
+    width: 20px;
+}
+
+.complete .timeline-icon{
+    color:#22c55e;
+}
+
+.current .timeline-icon{
+    color:#3b82f6;
+}
+
+.pending .timeline-icon{
+    color:#d1d5db;
+}
+
+.rejected .timeline-icon{
+    color:#ef4444;
+}
+.warning .timeline-icon{
+    color:#ffc107;
+}
+
+.timeline-line{
+    height:2px;
+    flex:1;
+    background:#d1d5db;
+    position: relative;
+    margin-left: -10%;
+    margin-right: -10%;
+}
+.timeline-label{
+    display: flex;
+    align-items: flex-start;
+}
+.timeline-line.complete{
+    background:#22c55e;
+}
+.timeline-line.current{
+    background:#d1d5db;
+}
+.timeline-line.pending{
+    background:#d1d5db;
+}
+.timeline-line.rejected{
+    background:#d1d5db;
+}
+
+.timeline-eligibility svg,
+.timeline-document svg,
+.timeline-exam svg,
+.timeline-success svg{
+    font-size: 0px;
+}
+
+.timeline-eligibility.warning,
+.timeline-document.warning,
+.timeline-exam.warning,
+.timeline-success.warning{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ffc107;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+}
+.timeline-eligibility.rejected,
+.timeline-document.rejected,
+.timeline-exam.rejected,
+.timeline-success.rejected{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #ef4444;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+}
+.timeline-eligibility.current,
+.timeline-document.current,
+.timeline-exam.current,
+.timeline-success.current{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #3b82f6;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+}
+.timeline-eligibility.complete,
+.timeline-document.complete,
+.timeline-exam.complete,
+.timeline-success.complete{
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    background-color: #22c55e;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 3px 6px 3px 6px;
+}
+
+

@@ -1,0 +1,57 @@
+.page-body{
+   flex:1;
+   padding: 24px;
+   overflow-y: auto;
+   height: auto;
+
+}
+.page-content{
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e9e9e9;
+    min-height: 100%;
+    max-width: 1600px;
+    min-width: 1260px;
+    /*Reponsive PC right space*/
+    padding: 16px 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-family: 'Roboto', sans-serif;
+}
+.page-content-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.candidate-table{
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e9e9ee;
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow:
+        0 0 0 1px rgba(255,255,255,0.6) inset,
+        0 2px 8px rgba(15,23,42,0.04);
+    margin: 8px 0 0;
+    animation: fadeTable 1s ease;
+    }
+.candidate-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+}
+
+@keyframes fadeTable {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

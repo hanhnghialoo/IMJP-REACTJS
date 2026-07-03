@@ -1,0 +1,14 @@
+{
+    "candidateName":"Name...",
+    "homeTown": "Hometown...",
+    "status": "Status...",
+    "addCandidate": "Add new candidate...",
+    "search":"Search",
+    "candidateList": "Candidate List",
+    "deleteCandidate":"Delete candidate",
+    "searchAdvance":"Advance search",
+    "searchBy":"Search by name, batch exam, province, source channel,..."
+
+
+
+}

@@ -1,0 +1,11 @@
+{
+    "empty":"Empty",
+    "assessment":"Assessment",
+    "passed":"Passed",
+    "failedRetest":"Failed-Retest",
+    "failedNonRetest":"Failed-Non-Retest",
+    "postponed":"Postponed",
+    "absent":"Absent",
+    "enrolled":"Enrolled",
+    "notEnrolled":"Not-Enrolled"
+}

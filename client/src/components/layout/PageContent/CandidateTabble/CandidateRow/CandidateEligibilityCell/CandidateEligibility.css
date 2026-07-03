@@ -1,0 +1,43 @@
+.candidate-eligibility{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.badge-candidate-eligible{
+    gap:4px;
+}
+.badge-candidate-eligible svg{
+    color: rgb(6, 161, 6);
+    /* font-size: 12px; */
+}
+
+.badge-candidate-ineligible{
+    gap:4px;
+}
+.badge-candidate-ineligible svg{
+    color:red;
+    /* font-size: 12px; */
+}
+
+.badge-candidate-pending{
+    gap:4px;
+}
+.badge-candidate-pending svg{
+    color:#e1ab4d;
+    /* font-size: 12px; */
+}
+
+.candidate-eligibility:hover{
+    /* background-color: #ebebeb; */
+    cursor: pointer;
+    transform: translateX(6px);
+}
+.badge-candidate-eligible.expanded,
+.badge-candidate-ineligible.expanded,
+.badge-candidate-pending.expanded{
+    border-radius: 10px;
+}

@@ -1,0 +1,10 @@
+.user-section{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.text-user-section{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,20 @@
+.detail-info-card{
+    background-color: #f3f4fa;
+    border-radius: 12px;
+    padding: 20px 12px 20px 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #e8e8ec;
+    position: relative;
+}
+.detail-info-title{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 16px;
+    color: #1ca3ec;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}

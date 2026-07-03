@@ -1,0 +1,36 @@
+.candidate-status{
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.badge-candidate-status{
+    gap:4px;
+}
+
+.status\:agreed{
+    color:#1bc75a;
+}
+.status\:notInterested{
+    color: #ef4444;
+}
+.status\:considering{
+    color: #c801ff;
+}
+.status\:familyApproval{
+    color: #3b82f6;
+}
+.status\:undecided{
+    color: #ffc001;
+}
+
+.candidate-status:hover{
+    cursor: pointer;
+    transform: translateX(6px);
+}
+
+.badge-candidate-status.expanded{
+    border-radius: 10px;
+}

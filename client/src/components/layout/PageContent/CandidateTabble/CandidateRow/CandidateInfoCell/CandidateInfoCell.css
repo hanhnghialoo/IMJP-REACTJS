@@ -1,0 +1,17 @@
+.candidate-info-cell{
+    line-height: 26px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.candidate-info-cell:hover{
+    /* background-color: #ebebeb; */
+    cursor: pointer;
+    transform: translateX(6px);
+}
+.candidate-info-cell:hover .candidate-info-cell{
+    background-color: #f9f9f9;
+    transform: translateX(2px);
+}

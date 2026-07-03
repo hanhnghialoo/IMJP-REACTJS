@@ -1,0 +1,116 @@
+.detail-status-card{
+    background: #eef7ff;
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #b6d8ff;
+    position: relative;
+    flex:1;
+    line-height: 2.2;
+}
+
+.btn-edit-candidate.status{
+    top:2%;
+}
+
+.detail-status-title{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 16px;
+    color: #1ca3ec;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.badge-detail-status\:agreed{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    color: rgb(7, 163, 7);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    border-radius: 20px;
+    background: #dff9e9;
+    border: 1px solid #e2e2e2; 
+}
+.badge-detail-status\:notInterested{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    color: #ef4444;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #ffdfdf;
+    border: 1px solid #e2e2e2; 
+}
+.badge-detail-status\:undecided{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    background-color: #fff4d5;
+    color: #ffc001;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid #e2e2e2; 
+}
+.badge-detail-status\:considering{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    color: #c801ff;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #f7daff;
+    border: 1px solid #d1d1d1; 
+}
+.badge-detail-status\:familyApproval{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    color: #3b82f6;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #cee1ff;
+    border: 1px solid #c1c1c1; 
+}
+
+.badge-detail-common\:empty{
+    font-size: 18px;
+    font-weight: 400;
+    gap:10px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+}
+.detail-item-card.status-detail{
+    grid-template-columns: 140px 20px 1fr;
+    margin-top: 10px;
+    min-height: 80px;
+}
+.detail-item-card.status-note{
+    grid-template-columns: 140px 20px 1fr;
+    min-height: 80px;
+}

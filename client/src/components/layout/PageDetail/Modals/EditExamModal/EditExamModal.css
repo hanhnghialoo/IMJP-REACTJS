@@ -1,0 +1,4 @@
+.text-area-field.exam-reason,
+.text-area-field.exam-note{
+    resize: vertical;
+}

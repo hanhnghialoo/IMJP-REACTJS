@@ -1,0 +1,31 @@
+.total-user-card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 20px;
+    gap: 12px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    flex: 1;
+    box-shadow:
+    0 0 0 1px rgba(255,255,255,0.6) inset,
+    0 2px 8px rgba(15,23,42,0.04);
+}
+.total-user-card-icon{
+    color: #0195d9;
+}
+.total-user-card-icon svg{
+    width: auto;
+    height: 25px;
+}
+.total-user-card-content{
+    display: flex;
+    flex-direction: column;
+}
+.total-user-card-number{
+    animation: flipDown 1s ease-out;
+    transform-origin: center top;
+}

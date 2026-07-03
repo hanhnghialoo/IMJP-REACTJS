@@ -1,0 +1,17 @@
+.checkbox-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.checkbox-label{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+}
+.checkbox-label.disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}

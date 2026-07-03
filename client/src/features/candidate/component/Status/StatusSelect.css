@@ -1,0 +1,101 @@
+.status-select {
+    position: relative;
+    width: 100%;
+}
+.status-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status-trigger {
+    height: 44px;
+    padding: 0 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+.status-trigger.status-agreed{
+    color:  rgb(7, 163, 7);
+    background-color: #dff9e9;
+}
+.status-option.status-agreed{
+    color:  rgb(7, 163, 7);
+}
+.status-trigger.status-not-interested{
+    color: #ef4444;
+    background-color: #ffdfdf;
+}
+.status-option.status-not-interested{
+    color: #ef4444;
+}
+.status-trigger.status-undecided{
+    background-color: #fff4d5;
+    color: #e7ae02;
+}
+.status-option.status-undecided{
+    color: #e7ae02;
+}
+.status-trigger.status-considering{
+    background-color: #f7daff;
+    color: #c801ff;
+}
+.status-option.status-considering{
+    color: #c801ff;
+}
+.status-trigger.status-family-approval{
+    background-color: #cee1ff;
+    color: #3b82f6;
+}
+.status-option.status-family-approval{
+    color: #3b82f6;
+}
+.status-trigger.status-empty,
+.status-option.status-empty{
+    background-color: #ffffff;
+    color: #000000;
+    opacity: 0.3;
+}
+.status-selected,
+.status-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.status-select svg{
+    height:18px;
+    width: 18px;
+}
+.status-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+    z-index: 100;
+    box-shadow:
+        0 4px 8px rgba(15, 23, 42, 0.04),
+        0 12px 24px rgba(15, 23, 42, 0.08),
+        0 24px 48px rgba(15, 23, 42, 0.06);
+}
+.status-option {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid rgb(230, 230, 230);
+}
+.status-option:hover {
+    background: #f1f1f1;
+}

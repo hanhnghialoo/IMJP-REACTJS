@@ -1,0 +1,141 @@
+.detail-result-card{
+    background: #eef7ff;
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.9;
+    border: 1px solid #b6d8ff;
+    position: relative;
+    flex:1;
+    line-height: 2.2;
+}
+
+.btn-edit-candidate.result{
+    top:2%;
+}
+
+.detail-result-title{
+    display: flex;
+    align-items: center;
+    gap:6px;
+    font-size: 16px;
+    color: #1ca3ec;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.badge-detail-result\:passed{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: rgb(7, 163, 7);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #dff9e9;
+    border: 1px solid #e2e2e2; 
+}
+.badge-detail-result\:absent{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: #8a929e;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #7070701d;
+    border: 1px solid #e2e2e2; 
+}
+.badge-detail-result\:failedRetest{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    color: #e19106;
+    display: flex;
+    justify-content: center;
+}
+.badge-detail-result\:failedNonRetest{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: #ef4444;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #e532321e;
+    border: 1px solid #d1d1d1; 
+}
+.badge-detail-result\:postponed{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: #f2b705;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #dffd7136;
+    border: 1px solid #c1c1c1; 
+}
+.badge-detail-result\:enrolled{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: #3b82f6;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    margin: auto;
+    border-radius: 20px;
+    background: #71aefd38;
+    border: 1px solid #c1c1c1; 
+}
+.badge-detail-result\:notEnrolled{
+    font-size: 18px;
+    font-weight: 400;
+    width: fit-content;
+    padding: 0 14px 0 14px;
+    gap:6px;
+    color: #64748b;
+    display: flex;
+    justify-content: center;
+}
+.badge-detail-common\:empty{
+    font-size: 18px;
+    font-weight: 400;
+    gap:6px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    opacity: 0.3;
+}
+.detail-item-card.result-reason{
+    grid-template-columns: 140px 20px 1fr;
+    margin-top: 10px;
+    min-height: 68px;
+}
+.detail-item-card.result-note{
+    grid-template-columns: 140px 20px 1fr;
+    min-height: 68px;
+}
+.detail-item-card.result-date{
+    grid-template-columns: 140px 20px 1fr;
+}
+.detail-item-card.result-batch-code{
+    grid-template-columns: 140px 20px 1fr;
+}

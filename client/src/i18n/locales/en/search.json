@@ -1,0 +1,21 @@
+{
+    "reset":"Clear filter",
+    "search":"Search",
+    "ageRanger":"Age ranger",
+    "personalInformation": "Personal information",
+    "region":"Region",
+    "north":"North",
+    "central": "Central",
+    "south":"South",
+    "today":"Today",
+    "yesterday":"Yesterday",
+    "last7Days":"Last 7 day",
+    "last30Days":"Last 30 day",
+    "thisMonth":"This month",
+    "lastMonth":"Last month",
+    "customRange":"Custom ranger",
+    "fromDate":"From",
+    "fromTo":"To"
+
+
+}

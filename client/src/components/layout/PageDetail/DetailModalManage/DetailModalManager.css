@@ -1,0 +1,147 @@
+.modal-edit-card{
+    position: fixed;
+    top:0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index:9999;
+    background: rgba(0,0,0,.5);
+}
+.modal-edit-content{
+    width: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        -8px 0 24px rgba(0,0,0,.12);
+    padding: 10px 34px 0 34px;
+    overflow-x:hidden;
+    overflow-y: auto;
+}
+.modal-edit-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.modal-edit-middle{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.modal-edit-content{
+    animation: slideIn .25s ease;
+}
+.modal-edit-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 10px 0 10px 0;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(100%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.btn-close-modal-edit{
+    color: #00a0e9;
+    font-size: 28px;
+    display: flex;
+    border-radius: 100%;
+    padding: 0;
+    margin-top: -20px;
+    height: auto;
+}
+.btn-close-modal-edit:hover{
+    background: #00a0e9;
+    color: #ffffff;
+}
+
+.modal-edit-title{
+    color: #119feb;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.modal-edit-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 14px;
+    gap: 50px;
+}
+.btn.cancel-modal{
+    width: 120px;
+}
+.btn.save-modal{
+    width:120px;
+    gap:12px;
+}
+.btn.save-modal svg{
+    height: 20px;
+    width: auto;
+}
+
+.input-modal,
+.select-modal{
+    background-color:rgb(241, 241, 241);
+    font-size: 14px !important;
+    border: 1px solid #e6e6e6;
+}
+.text-area-field{
+    background-color:rgb(241, 241, 241);
+    font-size: 14px !important;
+    min-height: 60px;
+    border: 1px solid #e6e6e6;
+    line-height: 1.7;
+    padding: 4px 10px 4px 10px;
+    width: 332px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: none;
+}
+
+.input-label,
+.select-label,
+.text-area-label,
+.eligibility-label,
+.status-label,
+.exam-label{
+    color: #6f757e;
+    font-size: 14px !important;
+}
+
+.eligibility-trigger{
+    font-size: 14px;
+    background-color:rgb(241, 241, 241);
+}
+.eligibility-option {
+    background-color:rgb(241, 241, 241);
+}
+
+.status-trigger,
+.exam-trigger{
+    font-size: 14px;
+    background-color:rgb(241, 241, 241);
+}

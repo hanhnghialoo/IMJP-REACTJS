@@ -1,0 +1,10 @@
+.modal-search-row-bottom{
+    display: flex;
+    flex-direction: row;
+    gap:40px;
+}
+.search-consultation-status,
+.search-consultation-eligibility,
+.search-consultation-exam-status{
+    width:220px;
+}

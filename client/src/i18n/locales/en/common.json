@@ -1,0 +1,31 @@
+{
+    "empty":"Empty",
+    "submitted":"Submitted",
+    "unsubmitted":"Unsubmitted",
+    "detail":"Detail",
+    "show": "Show",
+    "candidate":"Candidates",
+
+    "page":"Page",
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "total":"Total",
+    "detailCandidate": "Candidate detail",
+    "lastUpdatedBy":"Last updated by",
+    "cancel":"Cancel",
+    "save":"Save",
+    "create":"Create",
+
+    "any": "Any",
+    "users":"Users",
+    "sortAZ":"Sort A-Z",
+    "sortZA":"Sort Z-A",
+
+    "sortByNew":"Sort by newest",
+    "sortByOld":"Sort by oldest"
+
+
+
+
+    
+}

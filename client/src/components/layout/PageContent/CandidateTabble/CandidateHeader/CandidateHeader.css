@@ -1,0 +1,53 @@
+
+.candidate-header-source,
+.candidate-header-timeline,
+.candidate-header-no{
+    display: flex;
+    justify-content: center;
+}
+
+.candidate-header-fullname,
+.candidate-header-consultation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2px;
+    transition: all 0.2s ease;
+}
+
+.candidate-header-fullname:hover,
+.candidate-header-consultation:hover{
+    font-size: 17px;
+    cursor: pointer;
+    color: #327bf1;
+}
+.candidate-header-fullname-sort,
+.candidate-header-consultation-sort{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+.candidate-header-fullname-sort svg,
+.candidate-header-consultation-sort svg{
+    display: block;
+    margin: -3px 0;
+}
+.sort-dropdown{
+    position: fixed;
+    cursor: pointer;
+}
+.dropdown-common{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.dropdown-common:hover{
+    color: #1e6eef;
+    font-weight: 600;
+    flex: 1;
+}
+
+.candidate-header-fullname > .dropdown-content-common.open{
+    min-width: 180px;
+}

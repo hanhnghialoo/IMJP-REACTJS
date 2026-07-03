@@ -1,0 +1,116 @@
+.exam-select {
+    position: relative;
+    width: 100%;
+}
+.exam-label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.exam-trigger {
+    height: 44px;
+    padding: 0 12px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    background: #fff;
+}
+.exam-trigger.exam-passed{
+    background-color: #dff9e9;
+    color:  rgb(7, 163, 7);
+}
+.exam-option.exam-passed{
+    color:  rgb(7, 163, 7);
+}
+.exam-trigger.exam-absent{
+    background-color: #7070701d;
+    color:  #8a929e;
+}
+.exam-option.exam-absent{
+    color:  #8a929e;
+}
+.exam-trigger.exam-failed-retest{
+    background-color: #f3e5cc;
+    color:  #e19106;
+}
+.exam-option.exam-failed-retest{
+    color:  #e19106;
+}
+.exam-trigger.exam-failed-non-retest{
+    background-color: #e532321e;
+    color:  #ef4444;
+}
+.exam-option.exam-failed-non-retest{
+    color:  #ef4444;
+}
+.exam-trigger.exam-postponed{
+    background-color: #dffd7136;
+    color:  #f2b705;
+}
+.exam-option.exam-postponed{
+    color:  #f2b705;
+}
+.exam-trigger.exam-enrolled{
+    background-color: #71aefd38;
+    color:  #3b82f6;
+}
+.exam-option.exam-enrolled{
+    color:  #3b82f6;
+}
+.exam-trigger.exam-notEnrolled{
+    background-color: #7070701d;
+    color:  #64748b;
+}
+.exam-option.exam-notEnrolled{
+    color:  #64748b;
+}
+.exam-trigger.exam-empty{
+    background-color: #7070701d;
+    color:  #64748b;
+}
+.exam-option.exam-empty{
+    color:  #64748b;
+    opacity: 0.3;
+}
+.exam-selected,
+.exam-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.exam-select svg{
+    height:18px;
+    width: 18px;
+}
+.exam-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    overflow: hidden;
+    z-index: 100;
+    box-shadow:
+        0 4px 8px rgba(15, 23, 42, 0.04),
+        0 12px 24px rgba(15, 23, 42, 0.08),
+        0 24px 48px rgba(15, 23, 42, 0.06);
+}
+.exam-option {
+    padding: 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.exam-option:hover {
+    background: #f1f1f1;
+}
