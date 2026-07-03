@@ -8,13 +8,15 @@ import ReportPage from '../pages/report/ReportPage';
 function AppRoutes(){
     return(
         <Routes>
+            <Route path="/" element={<Navigate to="/candidates" replace />} />
             <Route path='/user' element={<UsersPage/>} />
             <Route path='/login' element={<LoginPage/>} />
             <Route path='/candidates' element={<HomePage/>} />
             <Route path='/candidates/:id' element={<CandidateDetailPage/>}/>
             <Route path='/report' element={<ReportPage/>}/>
+            <Route path="*" element={<Navigate to="/candidates" replace />} />
         </Routes>
     )
 }
 
-export default AppRoutes;
+export default AppRoutes; 
