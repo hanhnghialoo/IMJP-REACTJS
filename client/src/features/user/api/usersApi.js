@@ -3,7 +3,7 @@ import { calculateUserStatistics } from "../service/userStatistics";
 
 export async function getUsers({
     page = 1,
-    pageSize = 6
+    pageSize = 8
 }){
     const start = (page-1)*pageSize;
     const end = start + pageSize;

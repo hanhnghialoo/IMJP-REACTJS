@@ -118,11 +118,11 @@
         ---user-page-content:1060px;
 
         ---user-col-no: 36px;
-        ---user-col-info: 260px;
+        ---user-col-info: 250px;
         ---user-col-role: 110px;
         ---user-col-user-name: 170px;
-        ---user-col-email: 260px;
-        ---user-col-status: 140px;
+        ---user-col-email: 250px;
+        ---user-col-status: 130px;
 
         ---gap-user-info:6px;
 
@@ -130,7 +130,7 @@
 }
 @media (min-width: 1367px) and (max-width: 1600px){
     :root{
-        ---user-row-group-height:64px;
+        ---user-row-group-height:70px;
         ---user-table-height:470px;
 
         ---user-page-content:1060px;
@@ -148,7 +148,7 @@
 }
 @media (min-width: 1601px){
     :root{
-        ---user-row-group-height:90px;
+        ---user-row-group-height:70px;
         ---user-table-height:634px;
 
         ---user-page-content:1250px;

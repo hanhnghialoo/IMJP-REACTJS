@@ -8,7 +8,6 @@ function ContactDetail({candidate}){
     const {t} = useTranslation('candidate');
     return(
             <div className='candidate-expanded-contact-detail expanded-enter'>
-
                 <div className='detail-item'>
                     <span className='detail-label'>
                         {t('candidate:phoneNumber')}

@@ -5,13 +5,22 @@
     background: #ffffff;
     border-radius: 10px;
     border: 1px solid #e9e9e9;
-    padding: 16px 12px 24px 24px;
+    padding: 16px 12px 24px 12px;
     display: flex;
     flex:1;
     flex-direction: column;
     gap:10px;
     font-family: 'Roboto', sans-serif;
     width: auto;
+}
+.page-user-control-header{
+    display: flex;
+    flex-direction: row;
+    gap:6px;
+}
+.user-detail-fullName{
+    color: #138dff;
+    font-weight: 500;
 }
 .content-user-detail-default{
     background: #ffffff;

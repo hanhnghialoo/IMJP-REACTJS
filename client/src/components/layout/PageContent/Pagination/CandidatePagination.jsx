@@ -40,10 +40,10 @@ function CandidatePagination({
                                 onPageSizeChange(Number(e.target.value))
                             }}
                         >
-                            <option value={5}>5 {t('common:candidate')}</option>
-                            <option value={10}>10 {t('common:candidate')}</option>
-                            <option value={20}>20 {t('common:candidate')}</option>
-                            <option value={30}>50 {t('common:candidate')}</option>
+                            <option value={8}>8 {t('common:candidate')}</option>
+                            <option value={15}>15 {t('common:candidate')}</option>
+                            <option value={25}>25 {t('common:candidate')}</option>
+                            <option value={35}>35 {t('common:candidate')}</option>
                         </select>
                     <span>/ {t('common:page')}</span>
                     <span> --- {t('common:total')} {pagination?.totalItem} {t('common:candidate')}</span>

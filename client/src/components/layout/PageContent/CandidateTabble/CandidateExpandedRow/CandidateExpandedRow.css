@@ -1,6 +1,6 @@
 .detail-item {
     display: grid;
-    grid-template-columns: 200px 34px 1fr;
+    grid-template-columns: 200px 35px 1fr;
     align-items: center;
 }
 .detail-label {

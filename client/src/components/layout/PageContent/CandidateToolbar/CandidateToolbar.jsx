@@ -25,6 +25,13 @@ function CandidateToolbar({
                 startIcon={<CiSearch/>}
                 className='candidate-toolbar search'
             />
+                <Button
+                    label={t('candidateToolbar:search')}
+                    icon={<IoSearch/>}
+                    className='btn-search-candidate'
+                    variant='primary'
+                    onClick={onSearchCandidate}
+                />
             {canCreateCandidate && 
                 <Button
                     label={t('candidateToolbar:addCandidate')}
@@ -35,13 +42,6 @@ function CandidateToolbar({
                 />
             }
 
-            <Button
-                label={t('candidateToolbar:search')}
-                icon={<IoSearch/>}
-                className='btn-search-candidate'
-                variant='primary'
-                onClick={onSearchCandidate}
-            />
         </div>
     )
 }

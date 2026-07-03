@@ -75,7 +75,7 @@
 
 @media (max-width: 1366px){
     :root{
-        --candidate-row-height: 78px;
+        --candidate-row-height: 80px;
         --candidate-table-height: 445px;
 
         --candidate-col-no: 40px;
@@ -88,7 +88,7 @@
 }
 @media (min-width: 1367px) and (max-width: 1600px){
     :root{
-        --candidate-row-height: 92px;
+        --candidate-row-height: 78px;
         --candidate-table-height: 545px;
 
         --candidate-col-no: 40px;
@@ -101,7 +101,7 @@
 }
 @media (min-width: 1601px){
     :root{
-        --candidate-row-height: 127px;
+        --candidate-row-height: 78px;
         --candidate-table-height: 720px;
 
         --candidate-col-no: 60px;

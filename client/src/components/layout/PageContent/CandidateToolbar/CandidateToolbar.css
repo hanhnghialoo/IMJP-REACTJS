@@ -13,10 +13,12 @@
 .btn-add-new-candidate{
     height: 36px;
     font-size: 14px;
+    font-weight: 300;
     border-radius: 14px;
 }
 .btn-search-candidate{
     height: 36px;
+    font-weight: 300;
     font-size: 14px;
     border-radius: 14px;
 }

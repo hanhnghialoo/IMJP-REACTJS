@@ -15,9 +15,8 @@
 }
 
 .user-control-action{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
     gap:10px;
 }
 
@@ -25,10 +24,17 @@
 .btn-delete-user{
     font-size: 12px;
     font-weight: 400;
-    flex:1;
+    width: unset;
+    height: unset;
+    height: 35px;
     background-color: #ffffff;
 }
-
+.btn-reset-password-user:hover,
+.btn-delete-user:hover{
+    background-color: #f5f5f7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
 .btn-reset-password-user svg,
 .btn-delete-user svg{
     color: red;

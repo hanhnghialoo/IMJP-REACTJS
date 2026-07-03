@@ -13,7 +13,10 @@ export default function UserDetail({
             {user 
                 ?
                     <div className='page-user-detail'>
-                        <div>{t('user:userControl')}</div>
+                        <div className='page-user-control-header'>
+                            <div>{t('user:userControl')}:</div>
+                            <div className='user-detail-fullName'>{user.fullName}</div>
+                        </div>
                         <div className='page-user-divider'></div>
                         <UserControl/>
                     </div>
