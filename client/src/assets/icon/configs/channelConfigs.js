@@ -5,7 +5,7 @@ import ImjpIcon from "../component/ImjpIcon";
 import ColabIcon from "../component/ColabIcon";
 import CanthoIcon from "../component/CanthoIcon";
 import SanGDVLIcon from "../component/SanGDVLIcon";
-import TTSIcon from "../component/TTSIcon";
+import TTSIcon from "../component/TtsIcon";
 
 export const CHANNEL_CONFIG = {
     Facebook: {

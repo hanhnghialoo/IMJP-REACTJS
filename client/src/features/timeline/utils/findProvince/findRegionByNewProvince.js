@@ -1,4 +1,4 @@
-import { NEW_TO_REGION_MAP } from "../../constants/province/searchProvince/provinceNewtoRegion"
+import { NEW_TO_REGION_MAP } from "../../constants/province/searchProvince/provinceNewToRegion"
 
 export const findRegionByNewProvince = (newCode) => {
     return NEW_TO_REGION_MAP[newCode] || '';

@@ -1,7 +1,7 @@
 import './PageUsers.css';
 
 import PageHeader from './PageHeader/PageHeader';
-import UserToolbar from './UserToolBar/UserToolbar';
+import UserToolbar from './UserToolbar/UserToolbar';
 import UserHeader from './UserTable/UserHeader/UserHeader';
 import UserRow from './UserTable/UserRow/UserRow';
 import UserPagination from './Pagination/UserPagination';
