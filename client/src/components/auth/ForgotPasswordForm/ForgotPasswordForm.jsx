@@ -9,11 +9,12 @@ import TextButton from '../../common/Button/TextButton';
 
 import { LuMail } from "react-icons/lu";
 import { IoIosArrowRoundBack } from "react-icons/io";
+import { useState } from 'react';
 
 
 function ForgotPasswordForm({onLoginFormMode}){
-    const {t} = useTranslation(['auth','common']);
-    
+    const {t} = useTranslation();
+    const [emailForgotPassword, setEmailForgotPassword]= useState();
     return(
         <>
             <img 
@@ -25,9 +26,11 @@ function ForgotPasswordForm({onLoginFormMode}){
                 <h1 className='auth-title'>{t('auth:resetPassword')}</h1>
                 <form className='auth-form'>
                     <Input
+                        value={emailForgotPassword}
                         label={t('auth:email')}
                         startIcon={<LuMail />}
                         className='input-field'
+                        onChange={(e)=>setEmailForgotPassword(e.target.value)}
                     />
                     
                     <div className='auth-option'>

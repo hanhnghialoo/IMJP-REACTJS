@@ -10,11 +10,23 @@ import TextButton from '../../common/Button/TextButton';
 
 import { FaRegUser, } from 'react-icons/fa';
 import { IoKeyOutline} from 'react-icons/io5';
+import { FaRegEye } from "react-icons/fa";
+
 import { useState} from 'react';
 
 function LoginForm( {onForgotPasswordFormMode} ) {
-    const {t} = useTranslation(['auth','common']);
+    const {t} = useTranslation();
     const [rememberMe, setRememberMe] = useState(false);
+    const [loginForm, setLoginForm] = useState({
+        userName: '',
+        password:''
+    })
+    const handleChangeInput = (field) => (e) => {
+        setLoginForm(prev => ({
+            ...prev,
+            [field]: e.target.value
+        }))
+    }
     return (
             <>
                 <img 
@@ -29,12 +41,18 @@ function LoginForm( {onForgotPasswordFormMode} ) {
                         label={t('auth:username')}
                         startIcon={<FaRegUser />}
                         className='input-field'
+                        value={loginForm?.userName}
+                        onChange={handleChangeInput('userName')}
                     />
 
                     <Input
                         label={t('auth:password')}
                         startIcon={<IoKeyOutline/>}
+                        endIcon={<FaRegEye/>}
                         className='input-field'
+                        value={loginForm?.password}
+                        onChange={handleChangeInput('password')}
+                        type='password'
                     />
                     <div className='auth-option login-option'>
                         <Checkbox
@@ -46,6 +64,7 @@ function LoginForm( {onForgotPasswordFormMode} ) {
                         <TextButton
                             label={t('auth:forgotPassword')}
                             onClick={onForgotPasswordFormMode}
+                            className='text-btn-forgot-password'
                         />
                     </div>
                     <Button 

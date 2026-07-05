@@ -1,13 +1,23 @@
 .candidate-expanded-contact-detail{
     padding: 16px 50px 16px 50px;
     border-radius: 20px;
-    font-size: 14px;
-    font-weight: 200;
+    font-size: 15px;
+    font-weight: 400;
     background: #ffffff;
     margin: 20px 40px 20px 40px;
 
     display: grid;
     grid-auto-flow: column;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(6, auto);
     gap:12px 60px;
+}
+
+.detail-expanded-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    gap:10px;
+    color: var(--primary-color);
 }

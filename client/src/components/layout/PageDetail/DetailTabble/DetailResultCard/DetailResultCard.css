@@ -2,8 +2,8 @@
     background: #eef7ff;
     border-radius: 12px;
     padding: 20px 20px 20px 20px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.9;
     border: 1px solid #b6d8ff;
     position: relative;
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap:6px;
-    font-size: 16px;
+    font-size: 18px;
     color: #1ca3ec;
     font-weight: 600;
     text-transform: uppercase;
@@ -27,7 +27,7 @@
 }
 .badge-detail-result\:passed{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: rgb(7, 163, 7);
     display: flex;
@@ -41,7 +41,7 @@
 }
 .badge-detail-result\:absent{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: #8a929e;
     display: flex;
@@ -55,7 +55,7 @@
 }
 .badge-detail-result\:failedRetest{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     width: fit-content;
     padding: 0 14px 0 14px;
@@ -65,7 +65,7 @@
 }
 .badge-detail-result\:failedNonRetest{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: #ef4444;
     display: flex;
@@ -79,7 +79,7 @@
 }
 .badge-detail-result\:postponed{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: #f2b705;
     display: flex;
@@ -93,7 +93,7 @@
 }
 .badge-detail-result\:enrolled{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: #3b82f6;
     display: flex;
@@ -107,7 +107,7 @@
 }
 .badge-detail-result\:notEnrolled{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     width: fit-content;
     padding: 0 14px 0 14px;
     gap:6px;
@@ -117,7 +117,7 @@
 }
 .badge-detail-common\:empty{
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     gap:6px;
     color: #000000;
     display: flex;

@@ -3,11 +3,17 @@ import './ContactDetail.css';
 import { useTranslation } from 'react-i18next';
 import { formatPhoneNumber } from '../../../../../../../utils/formatPhoneNumber';
 import { getNameProvince } from '../../../../../../../features/timeline/utils/getNameProvince';
+import { MdPermContactCalendar } from "react-icons/md";
+
 
 function ContactDetail({candidate}){
     const {t} = useTranslation('candidate');
     return(
             <div className='candidate-expanded-contact-detail expanded-enter'>
+                <div className='detail-expanded-title'>
+                    <MdPermContactCalendar/>
+                    {t('candidate:contact')}
+                </div>
                 <div className='detail-item'>
                     <span className='detail-label'>
                         {t('candidate:phoneNumber')}

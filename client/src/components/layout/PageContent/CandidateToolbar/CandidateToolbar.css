@@ -7,19 +7,16 @@
 .input-candidate-toolbar{
     height: 36px;
     font-size: 14px;
+    font-weight: 400;
     background-color: #f4f5f9;
     border: 1px solid rgb(227, 227, 227);
 }
 .btn-add-new-candidate{
     height: 36px;
-    font-size: 14px;
-    font-weight: 300;
     border-radius: 14px;
 }
 .btn-search-candidate{
     height: 36px;
-    font-weight: 300;
-    font-size: 14px;
     border-radius: 14px;
 }
 

@@ -2,15 +2,15 @@
     background-color: #f3f4fa;
     border-radius: 12px;
     padding: 24px 12px 24px 30px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.9;
     border: 1px solid #e8e8ec;
     position: relative;
 }
 
 .detail-item-card.source{
-    grid-template-columns: 100px 20px 1fr;
+    grid-template-columns: 100px 14px 1fr;
     align-items: center;
     height: 50px;
 }
@@ -29,7 +29,8 @@
     background-color: #e6e6e6;
     max-width: 200px;
     min-width: 150px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 400;
     gap:4px;
     padding: 4px 4px 4px 4px;
     border-radius: 20px;
@@ -83,4 +84,9 @@
 .btn-cancel-source:hover{
     color: #ffffff;
     background-color: #00a0e9;
+}
+.badge-candidate-source{
+    gap:4px;
+    font-size: 15px;
+    font-weight: 400;
 }

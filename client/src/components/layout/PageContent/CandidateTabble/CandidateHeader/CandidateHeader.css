@@ -1,4 +1,7 @@
-
+.candidate-header{
+    font-size: 16px;
+    font-weight: 400;
+}
 .candidate-header-source,
 .candidate-header-timeline,
 .candidate-header-no{

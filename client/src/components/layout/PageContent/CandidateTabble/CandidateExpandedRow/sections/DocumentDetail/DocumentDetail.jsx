@@ -6,7 +6,10 @@ export default function DocumentDetail({candidate}){
     return(
         <td colSpan={9}>
             <div className='candidate-expanded-document-detail expanded-enter'>
-        
+                <div className='detail-expanded-title'>
+                    <BsChatLeftText/>
+                    {t('candidate:application')}
+                </div>
                 <div className='detail-item'>
                     <span className='detail-label'>
                         {t('candidate:documentStatus')}

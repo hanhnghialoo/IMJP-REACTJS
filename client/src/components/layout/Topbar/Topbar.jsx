@@ -13,7 +13,7 @@ function TopBar(){
         <div className='topbar'>
             <BrandSection/>
             <div className='page-context-section'>
-                <PageTitle/>
+                {/* <PageTitle/> */}
                 <NavigationSection/>
             </div>
             <div className='right-section'>

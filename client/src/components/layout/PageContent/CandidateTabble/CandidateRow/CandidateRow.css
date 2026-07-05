@@ -59,8 +59,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 15px;
 }
 @keyframes rowAppear {
     from {
@@ -75,12 +75,12 @@
 
 @media (max-width: 1366px){
     :root{
-        --candidate-row-height: 80px;
+        --candidate-row-height: 85px;
         --candidate-table-height: 445px;
 
         --candidate-col-no: 40px;
         --candidate-col-info: 220px;
-        --candidate-col-contact: 130px;
+        --candidate-col-contact: 150px;
         --candidate-col-consultation: 110px;
         --candidate-col-source: 130px;
         --candidate-col-exam: 70px;
@@ -88,12 +88,12 @@
 }
 @media (min-width: 1367px) and (max-width: 1600px){
     :root{
-        --candidate-row-height: 78px;
+        --candidate-row-height: 85px;
         --candidate-table-height: 545px;
 
         --candidate-col-no: 40px;
         --candidate-col-info: 220px;
-        --candidate-col-contact: 130px;
+        --candidate-col-contact: 150px;
         --candidate-col-consultation: 110px;
         --candidate-col-source: 130px;
         --candidate-col-exam: 70px;
@@ -101,12 +101,12 @@
 }
 @media (min-width: 1601px){
     :root{
-        --candidate-row-height: 78px;
+        --candidate-row-height: 85px;
         --candidate-table-height: 720px;
 
         --candidate-col-no: 60px;
         --candidate-col-info: 250px;
-        --candidate-col-contact: 150px;
+        --candidate-col-contact: 170px;
         --candidate-col-consultation: 130px;
         --candidate-col-source: 150px;
         --candidate-col-exam: 100px;

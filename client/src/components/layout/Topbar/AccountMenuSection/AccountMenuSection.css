@@ -7,6 +7,7 @@
 .btn-account-menu{
     height: 30px;
     font-size: 14px;
+    font-weight: 500;
     min-width: 10px;
     justify-content:flex-start;
     background-color: #f6f6f6;

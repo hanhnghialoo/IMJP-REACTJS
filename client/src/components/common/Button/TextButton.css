@@ -5,7 +5,8 @@
     border: none;
     color: #028ece;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .text-btn:hover{

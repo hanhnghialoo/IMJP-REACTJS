@@ -26,7 +26,7 @@ export function CandidateTimeline({
     )
     const currentStep = candidate?.timeline?.currentStep;
     return(
-        <div className='candidate-timeline' /*onClick={onClick}*/>
+        <div className='candidate-timeline'>
             
             <div className='candidate-timeline-list'>
                 {timeline.map((step,index)=>(
@@ -79,7 +79,7 @@ export function CandidateTimeline({
                                 }       
                            </div>
                                 
-                            <div className='timeline-icon'>
+                            <div className='timeline-icon' onClick={onClick}>
                                 {step.status === 'complete' && <FaCheckCircle />}
                                 {step.status === 'current' && <FaCircleDot/>}
                                 {step.status === 'pending' && <FaCircle/>}

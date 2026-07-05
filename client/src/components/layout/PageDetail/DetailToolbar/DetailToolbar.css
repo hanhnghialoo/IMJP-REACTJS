@@ -6,5 +6,6 @@
 }
 .btn-detail-toolbar-delete{
     height: 36px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 }

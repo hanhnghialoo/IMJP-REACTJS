@@ -19,7 +19,7 @@
     "address": "Địa chỉ",
     "province": "Tỉnh thành",
     "newProvince": "Tỉnh thành mới",
-    "oldProvince": "Tỉnh thành trước sáp nhập",
+    "oldProvince": "Tỉnh thành cũ",
     "familyMember": "Người thân",
     "email":"Email",
 
@@ -34,7 +34,7 @@
 
     "documentStatus":"Tình trạng hồ sơ",
     "submissionDate": "Ngày gửi",
-    "submissionMethod":"Hình thức nộp hồ sơ",
+    "submissionMethod":"Hình thức nộp",
     "recordedDate":"Ngày ghi nhận",
     "postalService":"Bưu điện",
     "esc":"Trung tâm tư vấn dịch vụ việc làm",

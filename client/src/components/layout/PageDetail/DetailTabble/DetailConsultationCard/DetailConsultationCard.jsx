@@ -89,19 +89,19 @@ export default function DetailConsultationCard({
                         <Badge
                             label={t('eligibility:eligible')}
                             startIcon={<FaRegCircleCheck/>}
-                            className={'candidate-eligible detail'}
+                            className={'candidate-eligible-card detail'}
                         />
                     : candidate?.eligibility.eligibility=== 'ineligible'?
                         <Badge
                             label={t('eligibility:ineligible')}
                             startIcon={<FiXCircle/>}
-                            className={'candidate-ineligible detail'}
+                            className={'candidate-ineligible-card detail'}
                         />
                     :
                         <Badge
                             label={t('eligibility:pending')}
                             startIcon={<PiWarningBold/>}
-                            className={'candidate-pending detail'}
+                            className={'candidate-pending-card detail'}
                         />
                     }  
                 </span>

@@ -2,8 +2,8 @@
     background: #eef7ff;
     border-radius: 12px;
     padding: 20px 12px 20px 30px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.9;
     border: 1px solid #b6d8ff;
     position: relative;
@@ -19,7 +19,7 @@
     display: flex;
     align-items: center;
     gap:6px;
-    font-size: 16px;
+    font-size: 18px;
     color: #1ca3ec;
     font-weight: 600;
     text-transform: uppercase;

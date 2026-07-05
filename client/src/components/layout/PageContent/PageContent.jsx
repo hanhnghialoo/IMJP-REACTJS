@@ -18,7 +18,7 @@ import SearchCandidateModal from '../../../features/candidate/modal/SearchCandid
 
 function PageContent () {
     const [page, setPage] = useState(1);
-    const [pageSize, setPageSize] = useState(8);
+    const [pageSize, setPageSize] = useState(10);
     const [isOpenCreateModal, setIsOpenCreateModal] = useState(false);
     const [isOpenSearchModal, setIsOpenSearchModal] = useState(false);
     const inputNameRef = useRef(null);

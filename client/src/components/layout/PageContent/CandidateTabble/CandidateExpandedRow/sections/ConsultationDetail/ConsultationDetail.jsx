@@ -1,11 +1,16 @@
 import './ConsultationDetail.css';
 import { useTranslation } from 'react-i18next';
+import { BsChatLeftText } from "react-icons/bs";
+
 
 function ConsultationDetail({candidate}){
     const {t}= useTranslation('candidate');
     return (
             <div className='candidate-expanded-consultation-detail expanded-enter'>
-        
+                <div className='detail-expanded-title'>
+                    <BsChatLeftText/>
+                    {t('candidate:consultation')}
+                </div>
                 <div className='detail-item'>
                     <span className='detail-label'>
                         {t('candidate:lastConsultation')}

@@ -2,8 +2,8 @@
     background: #eef7ff;
     border-radius: 12px;
     padding: 20px 12px 20px 30px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
     line-height: 1.9;
     border: 1px solid #b6d8ff;
     position: relative;
@@ -18,7 +18,7 @@
     display: flex;
     align-items: center;
     gap:6px;
-    font-size: 16px;
+    font-size: 18px;
     color: #1ca3ec;
     font-weight: 600;
     text-transform: uppercase;
@@ -65,27 +65,36 @@
     gap:10px;
 }
 
-.badge-candidate-eligible.detail{
+.badge-candidate-eligible-card.detail{
     color: rgb(46, 153, 46);
     border-radius: 20px;
     border: 1px solid #e2e2e2; 
     background: #dff9e9;
     padding: 0 20px 0 20px;
+    gap:6px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.badge-candidate-ineligible.detail{
+.badge-candidate-ineligible-card.detail{
     color: #dd2121;
     border-radius: 20px;
     border: 1px solid #e2e2e2; 
     background: #f1dddd;
     padding: 0 20px 0 20px;
+    gap:6px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.badge-candidate-pending.detail{
+.badge-candidate-pending-card.detail{
     color: #c7ad77;
     border-radius: 20px;
     border: 1px solid #e2e2e2; 
     background: #fff3d6;
     padding: 0 20px 0 20px;
+    gap:6px;
+    font-size: 18px;
+    font-weight: 600;
 }
 

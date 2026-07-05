@@ -6,6 +6,10 @@
     background-color: #ffffff;
     border-bottom: 1px solid #00a0e9;
     gap:10px;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    box-shadow: var(--shadow-md);
 }
 
 
@@ -30,16 +34,16 @@
 
 @media (max-width: 1366px){
     :root{
-        --height-top-bar: 120px;
+        --height-top-bar: 90px;
     }
 }
 @media (min-width: 1367px) and (max-width: 1600px){
     :root{
-        --height-top-bar: 120px;
+        --height-top-bar: 90px;
     }
 }
 @media (min-width: 1601px){
     :root{
-        --height-top-bar: 150px;
+        --height-top-bar: 130px;
     }
 }

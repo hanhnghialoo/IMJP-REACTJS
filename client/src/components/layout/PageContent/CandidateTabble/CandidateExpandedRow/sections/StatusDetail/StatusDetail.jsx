@@ -1,11 +1,16 @@
 import './StatusDetail.css';
 import { useTranslation } from 'react-i18next';
+import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
+
 
 export default function StatusDetail({candidate}){
     const {t}=useTranslation('candidate','status','common');
     return(
             <div className='candidate-expanded-status-detail expanded-enter'>
-        
+                <div className='detail-expanded-title'>
+                    <HiOutlineClipboardDocumentList/>
+                    {t('candidate:status')}
+                </div>
                 <div className='detail-item'>
                     <span className='detail-label'>
                         {t('candidate:status')}
