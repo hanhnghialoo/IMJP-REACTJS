@@ -15,6 +15,7 @@ import CandidateExpandedRow from './CandidateTabble/CandidateExpandedRow/Candida
 import CandidatePagination from './Pagination/CandidatePagination';
 import CreatCandidateModal from '../../../features/candidate/modal/CreateCandidateModal/CreateCandidateModal';
 import SearchCandidateModal from '../../../features/candidate/modal/SearchCandidateModal/SearchCandidateModal';
+import QuickFilter from './CandidateToolbar/QuickFilter/QuickFilter';
 
 function PageContent () {
     const [page, setPage] = useState(1);
@@ -22,6 +23,7 @@ function PageContent () {
     const [isOpenCreateModal, setIsOpenCreateModal] = useState(false);
     const [isOpenSearchModal, setIsOpenSearchModal] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
+    const [isOpenQuickFilter, setIsOpenQuickFilter] = useState(false);
     const inputNameRef = useRef(null);
     const handleChangeSearchQuery = (query) => {
         setSearchQuery(query);
@@ -73,8 +75,11 @@ function PageContent () {
                         onSearchCandidate={()=>setIsOpenSearchModal(true)}
                         handleChangeSearchQuery={handleChangeSearchQuery}
                         searchQuery={searchQuery}
+                        onOpenQuickFilter={()=>setIsOpenQuickFilter(prev=>!prev)}
                     />
                 </div>
+                {isOpenQuickFilter && 
+                    <QuickFilter/>}
 
                 <div className='candidate-table'>
                     <CandidateHeader/>

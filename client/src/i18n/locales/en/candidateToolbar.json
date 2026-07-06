@@ -6,6 +6,7 @@
     "search":"Search",
     "candidateList": "Candidate List",
     "deleteCandidate":"Delete candidate",
+    "quickFilter":"Quick filter",
     "searchAdvance":"Advance search",
     "searchBy":"Search by name, batch exam, province, source channel,..."
 

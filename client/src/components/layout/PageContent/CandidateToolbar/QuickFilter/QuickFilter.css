@@ -1,0 +1,69 @@
+.quick-filter-card{
+    background-color: #e6f2f8;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    border-radius: 10px;
+    animation: filterOpen .4s cubic-bezier(.22, 1, .36, 1) forwards;
+}
+.quick-filter-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 14px;
+    font-weight: 400;
+}
+.quick-filter-content-eligibility,
+.quick-filter-content-document,
+.quick-filter-content-exam{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.floating-radio-button{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.floating-radio-icon.primary,
+.floating-radio-icon.familyApproval{
+    color: #2563eb;
+}
+.floating-radio-icon.agreed,
+.floating-radio-icon.passed {
+    color: #16a34a;
+}
+.floating-radio-icon.considering {
+    color: #7c3aed;
+}
+.floating-radio-icon.notInterested,
+.floating-radio-icon.failedNonRetest{
+    color: #dc2626;
+}
+.floating-radio-icon.undecided {
+    color: #f59e0b;
+}
+
+@keyframes filterOpen {
+    from {
+        opacity: 0;
+        transform: translateY(-12px) scaleY(.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+}
+
+@keyframes filterClose {
+    from {
+        opacity: 1;
+        transform: translateY(0) scaleY(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-12px) scaleY(.95);
+    }
+}

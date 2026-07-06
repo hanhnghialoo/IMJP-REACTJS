@@ -11,14 +11,13 @@
     background-color: #f4f5f9;
     border: 1px solid rgb(227, 227, 227);
 }
-.btn-add-new-candidate{
+.btn-add-new-candidate,
+.btn-search-candidate,
+.btn-quick-filter-candidate{
     height: 36px;
     border-radius: 14px;
 }
-.btn-search-candidate{
-    height: 36px;
-    border-radius: 14px;
-}
+
 
 .input-candidate-toolbar.search{
     width:500px;

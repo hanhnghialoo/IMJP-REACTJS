@@ -1,0 +1,52 @@
+.floating-radio{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.floating-radio-button{
+    display: flex;
+    gap:6px;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #E5E7EB;
+    background: #fff;
+    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .2s;
+}
+.floating-radio-button:hover {
+    background: #ffffff;
+    border:1px solid #aad8ed;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+.floating-radio-button.active {
+    background: #e6f2f8;
+    color: #00a0e9;
+    border:1px solid #46a0ca;
+    box-shadow:
+        0 10px 25px rgba(17,24,39,.18);
+}
+
+.floating-radio-icon svg{
+    height: 22px;
+    width: auto;
+}
+
+.floating-radio-icon.primary {
+    color: #2563eb;
+}
+
+.floating-radio-icon.success {
+    color: #16a34a;
+}
+
+.floating-radio-icon.danger {
+    color: #dc2626;
+}
+
+.floating-radio-icon.pending {
+    color: #f59e0b;
+}

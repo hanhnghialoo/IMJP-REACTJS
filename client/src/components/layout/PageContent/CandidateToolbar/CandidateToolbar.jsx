@@ -7,6 +7,8 @@ import { CiSearch } from "react-icons/ci";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { IoCreateSharp } from "react-icons/io5";
 import { IoSearch } from "react-icons/io5";
+import { IoFilterSharp } from "react-icons/io5";
+
 
 
 import { useTranslation } from 'react-i18next';
@@ -16,12 +18,20 @@ function CandidateToolbar({
     onCreateCandidate,
     onSearchCandidate,
     handleChangeSearchQuery,
-    searchQuery
+    searchQuery,
+    onOpenQuickFilter
 }){
     const {t} = useTranslation('candidateToolbar');
     const {canCreateCandidate} = usePermission();
     return(
         <div className='candidate-toolbar-content'>
+            <Button
+                label={t('candidateToolbar:quickFilter')}
+                variant='primary-xs'
+                icon={<IoFilterSharp/>}
+                className='btn-quick-filter-candidate'
+                onClick={onOpenQuickFilter}
+            />
             <Input
                 value={searchQuery}
                 placeholder={t('candidateToolbar:searchBy')}
@@ -30,7 +40,7 @@ function CandidateToolbar({
                 onChange={(e)=>handleChangeSearchQuery(e.target.value)}
             />
                 <Button
-                    label={t('candidateToolbar:search')}
+                    label={t('candidateToolbar:searchAdvance')}
                     icon={<IoSearch/>}
                     className='btn-search-candidate'
                     variant='primary'

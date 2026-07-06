@@ -62,6 +62,17 @@
     background: #e1e1e1;
     color: rgb(73, 73, 73);
 }
+.btn-primary-xs{
+    background-color: #e6f2f8;
+    color: #00a0e9;
+    border: 1px solid #aad8ed;
+}
+.btn-primary-xs:hover{
+    background-color: #c6e7f7;
+    color: #00a0e9;
+    border: 1px solid #aad8ed;
+}
+
 .btn-normal:hover {
     background: #cecece;
     color: #6e6e6e;
