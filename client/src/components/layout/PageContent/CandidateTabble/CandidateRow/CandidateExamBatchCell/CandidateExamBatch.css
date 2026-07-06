@@ -5,6 +5,7 @@
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    justify-content:center;
 }
 .badge-candidate-exam-batch{
     gap:4px;

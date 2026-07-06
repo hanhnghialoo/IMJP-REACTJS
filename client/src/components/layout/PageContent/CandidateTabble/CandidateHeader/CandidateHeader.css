@@ -4,7 +4,8 @@
 }
 .candidate-header-source,
 .candidate-header-timeline,
-.candidate-header-no{
+.candidate-header-no,
+.candidate-header-batch-code {
     display: flex;
     justify-content: center;
 }
@@ -41,7 +42,7 @@
 }
 .dropdown-common{
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 

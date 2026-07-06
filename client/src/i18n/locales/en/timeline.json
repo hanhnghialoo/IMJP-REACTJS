@@ -7,5 +7,6 @@
     "complete":"Complete",
     "active":"Active",
     "pending":"Pending",
-    "rejected":"Rejected"
+    "rejected":"Rejected",
+    "warning":"Warning"
 }

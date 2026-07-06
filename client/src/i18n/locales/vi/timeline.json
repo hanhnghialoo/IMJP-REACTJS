@@ -7,5 +7,6 @@
     "complete":"Hoàn thành",
     "active":"Thực hiện",
     "pending":"Chưa thực hiện",
-    "rejected":"Từ chối"
+    "rejected":"Từ chối",
+    "warning":"Cảnh báo"
 }

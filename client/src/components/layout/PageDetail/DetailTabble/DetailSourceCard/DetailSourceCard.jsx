@@ -79,7 +79,7 @@ export default function DetailSourceCard({
                         ?
                         <Badge
                             label={t(`${sourceData.label}`)}
-                            startIcon={<IconBadge width='auto' height={40}/>}
+                            startIcon={<IconBadge width='auto' height={30}/>}
                             className={'candidate-source'}
                         />
                         :
@@ -88,7 +88,7 @@ export default function DetailSourceCard({
                                 trigger={() => (
                                     <Badge
                                         label={t(sourceData.label)}
-                                        startIcon={<IconBadge width="auto" height={40} />}
+                                        startIcon={<IconBadge width="auto" height={30} />}
                                         className="candidate-source-input"
                                         endIcon={<MdKeyboardArrowDown/>}
                                     />

@@ -47,7 +47,7 @@
 
 .modal-search-title{
     color: #119feb;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -70,7 +70,8 @@
     flex-direction: row;
     align-items: center;
     gap:6px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 500;
     color: #119feb;
 }
 .modal-search-bottom{
@@ -87,16 +88,19 @@
 }
 .btn.cancel-search-modal{
     width: 134px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .btn.confirm-search-modal{
     width:134px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     gap:6px;
 }
 .btn.reset-search-modal{
     width:134px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
     gap:6px;
 }
 .btn.confirm-search-modal svg{
@@ -121,6 +125,7 @@
 .input-search,
 .select-field{
     font-size: 14px;
+    font-weight: 400;
     background-color:rgb(241, 241, 241);
 }
 

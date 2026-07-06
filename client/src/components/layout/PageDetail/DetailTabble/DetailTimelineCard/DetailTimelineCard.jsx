@@ -124,13 +124,13 @@ export default function DetailTimelineCard({
                     startIcon={<FaCircleXmark/>}
                     className={'detail-timeline-item rejected'}
                 />
-                {/* <div className='detail-timeline-note-child'>
+                <div className='detail-timeline-note-child'>
                     <Badge
                         label={t('timeline:warning')}
                         startIcon={<FaCircleExclamation/>}
                         className={'detail-timeline-item warning'}
                     />
-                </div> */}
+                </div>
             </div>
         </div>
     )

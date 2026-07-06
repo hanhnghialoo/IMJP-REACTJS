@@ -21,7 +21,11 @@ function PageContent () {
     const [pageSize, setPageSize] = useState(10);
     const [isOpenCreateModal, setIsOpenCreateModal] = useState(false);
     const [isOpenSearchModal, setIsOpenSearchModal] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
     const inputNameRef = useRef(null);
+    const handleChangeSearchQuery = (query) => {
+        setSearchQuery(query);
+    };
     const {
         expandedCell,
         toggleExpand,
@@ -67,6 +71,8 @@ function PageContent () {
                     <CandidateToolbar
                         onCreateCandidate={()=>setIsOpenCreateModal(true)}
                         onSearchCandidate={()=>setIsOpenSearchModal(true)}
+                        handleChangeSearchQuery={handleChangeSearchQuery}
+                        searchQuery={searchQuery}
                     />
                 </div>
 

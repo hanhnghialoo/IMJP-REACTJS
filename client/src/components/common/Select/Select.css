@@ -5,7 +5,7 @@
 }
 .select-label{
     font-size: 16px;
-    font-weight: 150;
+    font-weight: 500;
 }
 .select-wrapper{
     position: relative;
@@ -52,6 +52,7 @@
     border-color: #1ca3ec;
     box-shadow:
         0 0 0 5px rgba(28, 163, 236, 0.15);
+        outline: none;
 }
 .select-field.has-start-icon {
     padding-left: 40px;

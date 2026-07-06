@@ -70,7 +70,7 @@ function CandidateHeader(){
                 />
             
                 <div className='candidate-header-source'>{t('candidate:sourceChannel')}</div>
-                <div>{t('candidate:batchCode')}</div>
+                <div className='candidate-header-batch-code'>{t('candidate:batchCode')}</div>
                 {/* <div>{t('candidate:eligibility')}</div> */}
                 <div className='candidate-header-timeline'>{t('candidate:timeline')}</div>
                 {/* <div>{t('candidate:result')}</div>    */}

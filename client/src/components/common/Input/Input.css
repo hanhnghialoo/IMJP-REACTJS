@@ -87,6 +87,7 @@
 .input-error-message {
     display: block;
     margin-top: 4px;
-    font-size: 0.75rem;
+    font-size: 12px;
+    font-weight: 400;
     color: #ef4444;
 }

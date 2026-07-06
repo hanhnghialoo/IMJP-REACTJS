@@ -155,11 +155,11 @@ export default function CreatCandidateModal({
                         endIcon={<IoLocation/>}
                         variant='primary'
                     />
-                    <Input
+                    {/* <Input
                         label={t('candidate:region')}
                         value={formCreateCandidate?.region}
                         className='modal create-region'
-                    />
+                    /> */}
                 </div>
 
                 <div className='modal-create-bottom'>

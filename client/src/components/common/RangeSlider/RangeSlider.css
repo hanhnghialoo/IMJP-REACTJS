@@ -3,13 +3,13 @@
     margin-top: -3px;
 }
 .range-slider-label {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 500;
     color: #6f757e;
 }
 .range-slider-value {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     color: #4b5563;
     display: flex;
     justify-content: space-between;

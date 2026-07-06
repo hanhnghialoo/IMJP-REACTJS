@@ -14,16 +14,20 @@ import usePermission from '../../../../features/auth/hook/usePermission';
 
 function CandidateToolbar({
     onCreateCandidate,
-    onSearchCandidate
+    onSearchCandidate,
+    handleChangeSearchQuery,
+    searchQuery
 }){
     const {t} = useTranslation('candidateToolbar');
     const {canCreateCandidate} = usePermission();
     return(
         <div className='candidate-toolbar-content'>
             <Input
+                value={searchQuery}
                 placeholder={t('candidateToolbar:searchBy')}
                 startIcon={<CiSearch/>}
                 className='candidate-toolbar search'
+                onChange={(e)=>handleChangeSearchQuery(e.target.value)}
             />
                 <Button
                     label={t('candidateToolbar:search')}

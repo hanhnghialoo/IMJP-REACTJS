@@ -31,9 +31,9 @@
 
 .mid-detail-content{
     display: grid;
-    grid-template-columns: 420px 6fr 5fr;
+    grid-template-columns: 400px 6fr 5fr;
     justify-content: space-between;
-    gap: 30px;
+    gap: 14px;
     margin-top: 12px;
     align-items: stretch;
     animation: cardFadeIn 1s ease;
