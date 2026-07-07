@@ -43,10 +43,10 @@ export const RESULT_EXAM_OPTIONS = [
         icon: GoDotFill,
         className:'exam-notEnrolled'
     },
-    {
-        value:'empty',
-        labelKey: 'common:empty',
-        icon: GoDotFill,
-        className:'exam-empty'
-    },
+    // {
+    //     value:'empty',
+    //     labelKey: 'common:empty',
+    //     icon: GoDotFill,
+    //     className:'exam-empty'
+    // },
 ]

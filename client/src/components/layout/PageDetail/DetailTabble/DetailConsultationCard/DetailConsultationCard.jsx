@@ -6,9 +6,11 @@ import Button from '../../../../common/Button/Button';
 import { useTranslation } from 'react-i18next';
 import Badge from '../../../../common/Badge/Badge';
 import { RiEdit2Fill } from "react-icons/ri";
-import { FaRegCircleCheck } from "react-icons/fa6";
-import { FiXCircle } from "react-icons/fi";
-import { PiWarningBold } from "react-icons/pi";
+
+import { GoCheckCircleFill } from "react-icons/go";
+import { GoXCircleFill } from "react-icons/go";
+import { TiWarning } from "react-icons/ti";
+
 import { IoChatbubblesSharp } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
 
@@ -88,19 +90,19 @@ export default function DetailConsultationCard({
                     {candidate?.eligibility.eligibility==='eligible' ?
                         <Badge
                             label={t('eligibility:eligible')}
-                            startIcon={<FaRegCircleCheck/>}
+                            startIcon={<GoCheckCircleFill/>}
                             className={'candidate-eligible-card detail'}
                         />
                     : candidate?.eligibility.eligibility=== 'ineligible'?
                         <Badge
                             label={t('eligibility:ineligible')}
-                            startIcon={<FiXCircle/>}
+                            startIcon={<GoXCircleFill/>}
                             className={'candidate-ineligible-card detail'}
                         />
                     :
                         <Badge
                             label={t('eligibility:pending')}
-                            startIcon={<PiWarningBold/>}
+                            startIcon={<TiWarning/>}
                             className={'candidate-pending-card detail'}
                         />
                     }  

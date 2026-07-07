@@ -60,6 +60,14 @@ export default function EditConsultationModal({
                 <div className='modal-edit-divider'></div>
 
                 <div className='modal-edit-middle'>
+                    <EligibilitySelect
+                        label={t('candidate:eligibility')}
+                        value={formData?.eligibility}
+                        onChange={(value)=> setFormData(prev=>({
+                            ...prev,
+                            eligibility:value
+                        }))}
+                    />
                     <Input
                         label={t('candidate:lastConsultation')}
                         value={formData?.consultationDate}
@@ -87,14 +95,6 @@ export default function EditConsultationModal({
                         value={formData?.personalCharacteristics}
                         className='text-area-personal-characteristics'
                         onChange={handleInputChange('personalCharacteristics')}
-                    />
-                    <EligibilitySelect
-                        label={t('candidate:eligibility')}
-                        value={formData?.eligibility}
-                        onChange={(value)=> setFormData(prev=>({
-                            ...prev,
-                            eligibility:value
-                        }))}
                     />
                     <TextArea
                         label={t('candidate:reason')}

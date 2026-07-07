@@ -1,33 +1,34 @@
-import { FaCheck } from "react-icons/fa";
-import { LuClock } from "react-icons/lu";
-import { FaXmark } from "react-icons/fa6";
-import { FaExclamation } from "react-icons/fa";
+import { GoCheckCircleFill } from "react-icons/go";
+import { GoClockFill } from "react-icons/go";
+import { GoXCircleFill } from "react-icons/go";
+import { BsExclamationOctagonFill } from "react-icons/bs";
 import { MdFamilyRestroom } from "react-icons/md";
 import { CiFileOff } from "react-icons/ci";
+
 
 export const STATUS_OPTIONS = [
     {
         value: 'agreed',
         labelKey: 'status:agreed',
-        icon: FaCheck,
+        icon: GoCheckCircleFill,
         className: 'status-agreed'
     },
     {
         value: 'considering',
         labelKey: 'status:considering',
-        icon: LuClock,
+        icon: GoClockFill,
         className: 'status-considering'
     },
     {   
         value: 'notInterested',
         labelKey: 'status:notInterested',
-        icon: FaXmark,
+        icon: GoXCircleFill,
         className: 'status-not-interested'
     },
     {
         value: 'undecided',
         labelKey: 'status:undecided',
-        icon:FaExclamation,
+        icon: BsExclamationOctagonFill,
         className: 'status-undecided'
     },
     {
@@ -36,10 +37,10 @@ export const STATUS_OPTIONS = [
         icon: MdFamilyRestroom,
         className: 'status-family-approval'
     },
-    {
-        value:'empty',
-        labelKey:'common:empty',
-        icon: CiFileOff,
-        className:'status-empty'
-    }
+    // {
+    //     value:'empty',
+    //     labelKey:'common:empty',
+    //     icon: CiFileOff,
+    //     className:'status-empty'
+    // }
 ]

@@ -35,8 +35,9 @@
     font-weight: 400;
     gap:4px;
     padding: 4px 4px 4px 4px;
-    border-radius: 20px;
-    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    border: 1px solid #E5E7EB;
+    transition: all .2s;
 }
 .badge-candidate-source-input:hover{
     background-color: #5bb5e5;

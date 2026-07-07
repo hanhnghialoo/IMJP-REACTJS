@@ -2,7 +2,7 @@
     background-color: #e6f2f8;
     border: 1px solid rgba(0, 0, 0, 0.1);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding: 15px;
     border-radius: 10px;
     animation: filterOpen .4s cubic-bezier(.22, 1, .36, 1) forwards;
@@ -15,7 +15,8 @@
 }
 .quick-filter-content-eligibility,
 .quick-filter-content-document,
-.quick-filter-content-exam{
+.quick-filter-content-exam,
+.quick-filter-content-candidate{
     display: flex;
     flex-direction: column;
     gap:10px;
@@ -26,26 +27,76 @@
     display: flex;
     justify-content: flex-start;
 }
+.btn-quick-filter-candidate.active{
+    background-color: #dfe5f1;
+    border: 1px solid #2563eb;
+}
 
 .floating-radio-icon.primary,
-.floating-radio-icon.familyApproval{
+.floating-radio-icon.status-family-approval,
+.floating-radio-icon.exam-enrolled{
     color: #2563eb;
 }
-.floating-radio-icon.agreed,
-.floating-radio-icon.passed {
+.floating-radio-icon.status-agreed,
+.floating-radio-icon.passed,
+.floating-radio-icon.exam-passed {
     color: #16a34a;
 }
-.floating-radio-icon.considering {
+.floating-radio-icon.status-considering {
     color: #7c3aed;
 }
-.floating-radio-icon.notInterested,
-.floating-radio-icon.failedNonRetest{
+.floating-radio-icon.status-not-interested,
+.floating-radio-icon.exam-failed-non-retest{
     color: #dc2626;
 }
-.floating-radio-icon.undecided {
+.floating-radio-icon.status-undecided,
+.floating-radio-icon.exam-postponed{
     color: #f59e0b;
 }
+.floating-radio-icon.exam-absent{
+    color:  #8a929e;
+}
+.floating-radio-icon.exam-failed-retest{
+    color:  #e19106;
+}
+.floating-radio-icon.exam-notEnrolled{
+    color:  #64748b;
 
+}
+.floating-radio-icon.filter-need-action{
+    color: #F59E0B;
+}
+.floating-radio-icon.filter-new-recently{
+    color: #10B981;
+}
+.floating-radio-icon.filter-new-update{
+    color: #3B82F6;
+}
+.quick-filter-description{
+    color: #64748b;
+}
+.quick-filter-content-control{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+}
+.btn-hide-quick-filter{
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.quick-filter-confirm{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap:12px;
+}
+.btn-reset-quick-filter,
+.btn-apply-quick-filter{
+    font-size: 14px;
+    min-width: 130px;
+}
 @keyframes filterOpen {
     from {
         opacity: 0;

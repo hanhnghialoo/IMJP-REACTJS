@@ -41,6 +41,9 @@
     "other":"Khác",
 
     "timeline":"Tiến trình",
-    "candidate":"Ứng viên"
+    "candidate":"Ứng viên",
+    "needAction": "Cần xử lý",
+    "newRecently": "Mới khởi tạo",
+    "newUpdate": "Mới cập nhật"
 
 }

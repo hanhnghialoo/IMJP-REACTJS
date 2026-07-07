@@ -226,7 +226,7 @@ export const fakeCandidates = [
         consultationResult: 'Rejected',
     
     document:{
-      documentStatus: 'unsubmitted',
+      documentStatus: '',
       submissionDate:'',
       submissionMethod:'',
       recordedDate:''
@@ -391,7 +391,7 @@ export const fakeCandidates = [
 
     },
     status:{
-      status: 'familyApproval',
+      status: 'empty',
       detail:'',
       noteStatus:''
     },

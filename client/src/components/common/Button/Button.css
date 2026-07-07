@@ -40,6 +40,7 @@
 
 .btn-primary:hover {
     background: #0482bd;
+    transform: translateY(-2px);
 }
 .btn-outline {
     background: white;
@@ -48,6 +49,7 @@
 }
 .btn-outline:hover {
     background: #f9fafb;
+    transform: translateY(-2px);
 }
 
 .btn-danger {
@@ -56,6 +58,7 @@
 }
 .btn-danger:hover {
     background: #d54949;
+    transform: translateY(-2px);
 }
 
 .btn-normal {
@@ -71,9 +74,11 @@
     background-color: #c6e7f7;
     color: #00a0e9;
     border: 1px solid #aad8ed;
+    transform: translateY(-2px);
 }
 
 .btn-normal:hover {
     background: #cecece;
     color: #6e6e6e;
+    transform: translateY(-2px);
 }

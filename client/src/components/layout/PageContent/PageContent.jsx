@@ -76,10 +76,13 @@ function PageContent () {
                         handleChangeSearchQuery={handleChangeSearchQuery}
                         searchQuery={searchQuery}
                         onOpenQuickFilter={()=>setIsOpenQuickFilter(prev=>!prev)}
+                        isOpenQuickFilter={isOpenQuickFilter}
                     />
                 </div>
                 {isOpenQuickFilter && 
-                    <QuickFilter/>}
+                    <QuickFilter
+                        onHideQuickFilter={()=>setIsOpenQuickFilter(false)}
+                    />}
 
                 <div className='candidate-table'>
                     <CandidateHeader/>

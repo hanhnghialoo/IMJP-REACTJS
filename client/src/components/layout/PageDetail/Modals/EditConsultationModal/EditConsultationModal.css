@@ -1,5 +1,6 @@
 .text-area-preference,
 .text-area-note,
-.text-area-personal-characteristics{
+.text-area-personal-characteristics,
+.text-area-reason{
     resize: vertical;
 }

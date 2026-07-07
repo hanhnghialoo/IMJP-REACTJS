@@ -23,7 +23,10 @@
     "sortZA":"Sắp xếp Z-A",
 
     "sortByNew":"Sắp xếp thời gian gần nhất",
-    "sortByOld":"Sắp xếp thời gian xa nhất"
+    "sortByOld":"Sắp xếp thời gian xa nhất",
+
+    "hideFilter":"Ẩn bộ lọc nhanh",
+    "apply":"Áp dụng"
 
 
     

@@ -41,5 +41,9 @@
     "other":"Other",
 
     "timeline":"Time line",
-    "candidate":"Candidate"
+    "candidate":"Candidate",
+
+    "needAction": "Need action",
+    "newRecently": "New Recently",
+    "newUpdate": "New Update"
 }

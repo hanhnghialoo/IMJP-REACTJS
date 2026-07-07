@@ -14,7 +14,8 @@
 }
 
 
-.text-btn-icon{
+.text-btn-start-con,
+.text-btn-end-icon{
     display: flex;
     align-items: center;
     justify-content: center;

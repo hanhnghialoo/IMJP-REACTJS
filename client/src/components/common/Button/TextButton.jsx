@@ -5,7 +5,8 @@ function TextButton(
         className='',
         onClick,
         label,
-        icon,
+        startIcon,
+        endIcon,
         disabled=false,
     }
 ){
@@ -17,13 +18,19 @@ function TextButton(
         disabled={disabled}
         > 
 
-        {icon && (
-            <span className='text-btn-icon'>
-                {icon}
+        {startIcon && (
+            <span className='text-btn-start-icon'>
+                {startIcon}
             </span>
         )}
             
         {label}
+
+        {endIcon && (
+            <span className='text-btn-end-icon'>
+                {endIcon}
+            </span>
+        )}
         </button>
     )
 }

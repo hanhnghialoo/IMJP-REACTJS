@@ -15,7 +15,8 @@
     "lastMonth":"Last month",
     "customRange":"Custom ranger",
     "fromDate":"From",
-    "fromTo":"To"
+    "fromTo":"To",
+    "filterDecription": "Quickly filter by criteria, application status, exam results, and candidate status"
 
 
 }

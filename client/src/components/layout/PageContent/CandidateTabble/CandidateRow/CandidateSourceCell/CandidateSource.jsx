@@ -17,7 +17,7 @@ function CandidateSource({candidate}){
         <div className='candidate-source'  data-tooltip={t(`${sourceData.label}`)}>
             <Badge
                 // label={t(`${sourceData.label}`)}
-                startIcon={<IconBadge width='auto' height={35}/>}
+                startIcon={<IconBadge width='auto' height={40}/>}
                 className={'candidate-source'}
             />
         </div>

@@ -96,6 +96,8 @@
 .select-modal{
     background-color:rgb(241, 241, 241);
     border: 1px solid #e6e6e6;
+    font-size: 16px;
+    font-weight: 400;
 }
 .text-area-field{
     background-color:rgb(241, 241, 241);
@@ -127,6 +129,8 @@ select {
 .status-label,
 .exam-label{
     color: #6f757e;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .eligibility-trigger{

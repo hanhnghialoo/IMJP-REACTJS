@@ -19,7 +19,8 @@ function CandidateToolbar({
     onSearchCandidate,
     handleChangeSearchQuery,
     searchQuery,
-    onOpenQuickFilter
+    onOpenQuickFilter,
+    isOpenQuickFilter
 }){
     const {t} = useTranslation('candidateToolbar');
     const {canCreateCandidate} = usePermission();
@@ -29,7 +30,7 @@ function CandidateToolbar({
                 label={t('candidateToolbar:quickFilter')}
                 variant='primary-xs'
                 icon={<IoFilterSharp/>}
-                className='btn-quick-filter-candidate'
+                className={`btn-quick-filter-candidate ${isOpenQuickFilter ? 'active' : ''}`}
                 onClick={onOpenQuickFilter}
             />
             <Input
@@ -42,7 +43,7 @@ function CandidateToolbar({
                 <Button
                     label={t('candidateToolbar:searchAdvance')}
                     icon={<IoSearch/>}
-                    className='btn-search-candidate'
+                    className={`btn-search-candidate`}
                     variant='primary'
                     onClick={onSearchCandidate}
                 />

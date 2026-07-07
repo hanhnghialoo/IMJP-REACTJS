@@ -23,7 +23,10 @@
     "sortZA":"Sort Z-A",
 
     "sortByNew":"Sort by newest",
-    "sortByOld":"Sort by oldest"
+    "sortByOld":"Sort by oldest",
+    "hideFilter":"Hide filter",
+    "apply":"Apply"
+
 
 
 

@@ -1,24 +1,24 @@
-import { FaRegCircleCheck } from "react-icons/fa6";
-import { FiXCircle } from "react-icons/fi";
-import { PiWarningBold } from "react-icons/pi";
+import { TiWarning } from "react-icons/ti";
+import { GoCheckCircleFill } from "react-icons/go";
+import { GoXCircleFill } from "react-icons/go";
 
 export const ELIGIBILITY_OPTIONS = [
     {
         value: 'eligible',
         labelKey: 'eligibility:eligible',
-        icon: FaRegCircleCheck,
+        icon: GoCheckCircleFill,
         className: 'candidate-eligible'
     },
     {
         value: 'ineligible',
         labelKey: 'eligibility:ineligible',
-        icon: FiXCircle,
+        icon: GoXCircleFill,
         className: 'candidate-ineligible'
     },
     {
         value: 'pending',
         labelKey: 'eligibility:pending',
-        icon: PiWarningBold,
+        icon: TiWarning,
         className: 'candidate-pending'
     }
 ];
