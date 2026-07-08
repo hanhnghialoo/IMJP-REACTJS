@@ -1,7 +1,8 @@
 .detail-toolbar-content{
     display: flex;
-    gap:12px;
+    gap:16px;
     justify-content: flex-end;
+    align-items: center;
     flex: 1;
 }
 .btn-detail-toolbar-delete{

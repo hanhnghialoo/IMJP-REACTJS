@@ -40,20 +40,20 @@ export default function useProvinceFilter(
     }
 
     const filteredNewHomeTowns = useMemo(()=>{
-        if (!formInput.region){
+        if (!formInput?.region){
             return PROVINCE_NEW
         }
         return PROVINCE_NEW.filter(
             province=>province.region===formInput.region
         );
-    }, [formInput.region]);
+    }, [formInput?.region]);
 
     const filteredOldHomeTowns = useMemo(()=>{
-        if (!formInput.newHomeTown){
+        if (!formInput?.newHomeTown){
             return ALL_OLD_PROVINCES;
         }
         return PROVINCE_MERGE_MAP[formInput.newHomeTown] || [];
-    }, [formInput.newHomeTown]);
+    }, [formInput?.newHomeTown]);
 
     return {
         filteredNewHomeTowns,

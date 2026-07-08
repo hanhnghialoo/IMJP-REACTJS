@@ -5,9 +5,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px 20px 10px 20px;
+    padding: 10px;
     gap: 12px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 14px;
     flex: 1;
     box-shadow:
@@ -16,6 +17,9 @@
 }
 .total-user-card-icon{
     color: #0195d9;
+    border-radius: 100%;
+    background-color: #0195d91a;
+    padding: 10px;
 }
 .total-user-card-icon svg{
     width: auto;
@@ -26,6 +30,7 @@
     flex-direction: column;
 }
 .total-user-card-number{
+    font-weight: 500;
     animation: flipDown 1s ease-out;
     transform-origin: center top;
 }

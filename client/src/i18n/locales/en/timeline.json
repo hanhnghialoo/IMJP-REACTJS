@@ -8,5 +8,7 @@
     "active":"Active",
     "pending":"Pending",
     "rejected":"Rejected",
-    "warning":"Warning"
+    "warning":"Warning",
+    "timelineNote":"Click on the timeline column to view detailed information."
+
 }

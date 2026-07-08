@@ -1,5 +1,8 @@
 .total-manager-card-icon{
     color: #2563eb;
+    border-radius: 100%;
+    background-color: #0195d91a;
+    padding: 10px;
 }
 .total-manager-card-icon svg{
     width: auto;

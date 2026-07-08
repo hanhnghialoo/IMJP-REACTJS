@@ -16,6 +16,8 @@
      "cancel":"Huỷ",
      "save":"Lưu",
      "create":"Thêm mới",
+     "delete":"Xoá",
+     "confirm":"Xác nhận",
 
     "any": "Bất kì",
     "users": "Người dùng",
@@ -26,7 +28,9 @@
     "sortByOld":"Sắp xếp thời gian xa nhất",
 
     "hideFilter":"Ẩn bộ lọc nhanh",
-    "apply":"Áp dụng"
+    "apply":"Áp dụng",
+
+    "other":"Khác"
 
 
     

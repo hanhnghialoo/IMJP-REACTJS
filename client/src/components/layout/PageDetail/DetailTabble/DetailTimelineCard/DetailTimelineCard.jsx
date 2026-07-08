@@ -132,6 +132,10 @@ export default function DetailTimelineCard({
                     />
                 </div>
             </div>
+
+            <div className='detail-timeline-note-description'>
+                {t('timeline:timelineNote')}
+            </div>
         </div>
     )
 }

@@ -62,6 +62,7 @@
     font-weight: 400;
     font-size: 15px;
 }
+
 @keyframes rowAppear {
     from {
         opacity: 0;

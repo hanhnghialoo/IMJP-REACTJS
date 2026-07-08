@@ -8,8 +8,19 @@
     "deleteCandidate":"Delete candidate",
     "quickFilter":"Quick filter",
     "searchAdvance":"Advance search",
-    "searchBy":"Search by name, batch exam, province, source channel,..."
+    "searchBy":"Search by name, batch exam, province, source channel,...",
 
+    "confirmTimeConsultation":"Confirm Consultation",
+    "confirmTimeApplication":"Confirm Application",
+    "confirmTimeExam":"Confirm Exam",
+    "setPlan":"Create Plan",
+    "addNote":"Add Note",
 
+    "other":"Other",
+
+    "deleteCandidateMessage":"Are you sure you want to delete this candidate?",
+    "deleteCandidateCaption":"This action cannot be undone and all data related to the candidate will be deleted.",
+    "deleteCandidateCheckbox":"I understand and agree to delete this candidate.",
+    "deleteCandidateSpan":"Will be deleted from the candidate list and cannot be restored."
 
 }

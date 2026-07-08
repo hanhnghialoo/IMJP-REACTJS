@@ -55,6 +55,7 @@
     border-color: #1ca3ec;
     box-shadow:
         0 0 0 5px rgba(28, 163, 236, 0.15);
+    outline: none;
 }
 .text-area-field::placeholder {
     color: #98a2b3;

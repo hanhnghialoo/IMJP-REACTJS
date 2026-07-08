@@ -11,62 +11,88 @@
 .status-trigger {
     height: 44px;
     padding: 0 12px;
-
     border: 1px solid #ddd;
     border-radius: 8px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     cursor: pointer;
 }
 .status-trigger.status-agreed{
     color:  rgb(7, 163, 7);
     background-color: #dff9e9;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-option.status-agreed{
     color:  rgb(7, 163, 7);
+    background-color: rgb(241, 241, 241);
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-trigger.status-not-interested{
     color: #ef4444;
     background-color: #ffdfdf;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-option.status-not-interested{
+    background-color: rgb(241, 241, 241);
     color: #ef4444;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-trigger.status-undecided{
     background-color: #fff4d5;
     color: #e7ae02;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-option.status-undecided{
+    background-color: rgb(241, 241, 241);
     color: #e7ae02;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-trigger.status-considering{
     background-color: #f7daff;
     color: #c801ff;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-option.status-considering{
+    background-color: rgb(241, 241, 241);
     color: #c801ff;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-trigger.status-family-approval{
     background-color: #cee1ff;
     color: #3b82f6;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-option.status-family-approval{
+    background-color: rgb(241, 241, 241);
     color: #3b82f6;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-trigger.status-empty,
 .status-option.status-empty{
-    background-color: #ffffff;
+    background-color: rgb(241, 241, 241);
     color: #000000;
     opacity: 0.3;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-selected,
 .status-option {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .status-select svg{
     height:18px;
@@ -97,5 +123,8 @@
     border: 1px solid rgb(230, 230, 230);
 }
 .status-option:hover {
-    background: #f1f1f1;
+    background: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    border-bottom: none;
 }

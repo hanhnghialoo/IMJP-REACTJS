@@ -23,7 +23,12 @@
     "userControlCaption":"Các thao tác này không thể hoàn tác, hãy chắc chắn khi thực hiện",
     "resetPassword":"Đặt lại mật khẩu",
     "lockAccount":"Khoá tài khoản",
-    "deleteUser":"Xoá người dùng"
+    "deleteUser":"Xoá người dùng",
+
+    "profile":"Hồ sơ",
+    "account":"Tài khoản",
+    "security":"Bảo mật",
+    "activity":"Hoạt động"
 
     
 }

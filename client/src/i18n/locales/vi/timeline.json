@@ -8,5 +8,6 @@
     "active":"Thực hiện",
     "pending":"Chưa thực hiện",
     "rejected":"Từ chối",
-    "warning":"Cảnh báo"
+    "warning":"Cảnh báo",
+    "timelineNote":"Nhấn vào cột tiến trình để xem thông tin chi tiết."
 }

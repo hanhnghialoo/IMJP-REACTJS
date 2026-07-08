@@ -143,3 +143,11 @@
         0 4px 12px rgba(33,150,243,.08);
     border-radius: 15px;
 }
+.detail-timeline-note-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #6f757e;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}

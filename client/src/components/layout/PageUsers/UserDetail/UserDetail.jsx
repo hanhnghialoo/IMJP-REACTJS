@@ -1,13 +1,17 @@
 import './UserDetail.css';
 
+import { useTranslation } from 'react-i18next';
+
+import { useState, useEffect } from 'react';
 import UserControl from './Section/UserControl/UserControl';
 import UserDefaultDetail from './UserDefaultDetail';
-import { useTranslation } from 'react-i18next';
+import UserDetailTabs from './UserDetailTabs/UserDetailTabs';
 
 export default function UserDetail({
     user
 }){
     const {t} = useTranslation();
+    const [activeTab, setActiveTab] = useState('profile')
     return(
         <>
             {user 
@@ -17,8 +21,13 @@ export default function UserDetail({
                             <div>{t('user:userControl')}:</div>
                             <div className='user-detail-fullName'>{user.fullName}</div>
                         </div>
-                        <div className='page-user-divider'></div>
-                        <UserControl/>
+                        {/* <div className='page-user-divider'></div> */}
+                        {/* <UserControl/> */}
+                        <UserDetailTabs
+                            activeTab={activeTab}
+                            onChangeTab={(e)=>setActiveTab(e)}
+                            user={user}
+                        />
                     </div>
                 : <UserDefaultDetail/>
             }

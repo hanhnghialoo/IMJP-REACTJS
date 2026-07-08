@@ -8,5 +8,17 @@
     "deleteCandidate":"Xoá ứng viên",
     "quickFilter":"Bộ lọc nhanh",
     "searchAdvance":"Tìm kiếm nâng cao",
-    "searchBy":"Tìm kiếm theo tên, khoá thi, quê quán, kênh tiếp cận,..."
+    "searchBy":"Tìm kiếm theo tên, khoá thi, quê quán, kênh tiếp cận,...",
+
+    "confirmTimeConsultation":"Xác nhận tư vấn",
+    "confirmTimeApplication":"Ghi nhận hồ sơ",
+    "confirmTimeExam":"Xác nhận thi tuyển",
+    "setPlan":"Tạo kế hoạch",
+    "addNote":"Thêm ghi chú",
+
+    "deleteCandidateMessage":"Bạn có chắc chắn muốn xoá ứng viên này không?",
+    "deleteCandidateCaption":"Hành động này không thể hoàn tác và toàn bộ dữ liệu liên quan đến ứng viên sẽ bị xoá.",
+    "deleteCandidateCheckbox":"Tôi hiểu và đồng ý xóa ứng viên này.",
+    "deleteCandidateSpan":"Sẽ bị xóa khỏi danh sách ứng viên và không thể khôi phục lại."
+
 }

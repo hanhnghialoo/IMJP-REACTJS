@@ -6,6 +6,7 @@ import { formatPhoneNumber } from '../../../../../utils/formatPhoneNumber';
 import { PROVINCE_NEW } from '../../../../../features/timeline/constants/province/provinceNew';
 import { getOldProvince } from '../../../../../features/timeline/utils/provinceHelper';
 import { buildProvince } from '../../../../../features/timeline/utils/buildProvince';
+import useProvinceFilter from '../../../../../hooks/useProvinceFilter';
 
 import Button from '../../../../common/Button/Button';
 import Input from '../../../../common/Input/Input';
@@ -38,24 +39,32 @@ export default function EditContactModal({
             }
         ))
     }
+    const {
+            filteredNewHomeTowns,
+            filteredOldHomeTowns,
+            handleChangeRegion,
+            handleChangeNewHomeTown,
+            handleChangeOldHomeTown
+        } = useProvinceFilter(formData, setFormData);
     
-    const oldProvinceOptions = useMemo(() => {
-        return [
-            {
-                value: '',
-                label: t('modalEdit:selectProvince')
-            },
-            ...provinceOldList.map(province => ({
-                value: province,
-                label: province,
-            }))
-        ];
-    }, [provinceOldList, t]);
+    // const oldProvinceOptions = useMemo(() => {
+    //     return [
+    //         {
+    //             value: '',
+    //             label: t('modalEdit:selectProvince')
+    //         },
+    //         ...provinceOldList.map(province => ({
+    //             value: province,
+    //             label: province,
+    //         }))
+    //     ];
+    // }, [provinceOldList, t]);
 
     useEffect(()=>{
         const data ={
             phone: candidate?.contact.phone || '',
             newHomeTown: candidate?.contact.newHomeTown || '',
+            region: candidate?.contact.region || '',
             oldHomeTown: candidate?.contact.oldHomeTown || '',
             email: candidate?.contact.email || '',
             address: candidate?.contact.address || '',
@@ -70,18 +79,19 @@ export default function EditContactModal({
             );
         }
     }, [candidate])
-    const handleProvinceChange = (e) => {
-        setFormData(prev => (
-            {
-                ...prev,
-                newHomeTown:e.target.value,
-                oldHomeTown:'',
-            }
-        ))
-        setProvinceOldList(
-            getOldProvince(e.target.value)
-        );
-    }
+    // const handleProvinceChange = (e) => {
+    //     setFormData(prev => (
+    //         {
+    //             ...prev,
+    //             newHomeTown:e.target.value,
+    //             oldHomeTown:'',
+    //         }
+    //     ))
+    //     setProvinceOldList(
+    //         getOldProvince(e.target.value)
+    //     );
+    // }
+    // const {handleChangeNewHomeTown} = useProvinceFilter(formData, setFormData);
     return(
         <div className='modal-edit-card'>
             <div className='modal-edit-content contact'>
@@ -112,26 +122,36 @@ export default function EditContactModal({
                         label={t('candidate:province')}
                         value={formData?.newHomeTown}
                         options={buildProvince(t)}
-                        onChange={handleProvinceChange}
+                        onChange={(e)=>handleChangeNewHomeTown(e.target.value)}
                         className={'select-modal province'}
                         startIcon={<IoLocation/>}
                         endIcon={<MdKeyboardArrowDown/>}
                         variant='primary'
                     />
+                    {/* <Input
+                        label={t('search:region')}
+                        value={formData?.region}
+                        className='modal create-region'
+                        disabled={true}
+                    /> */}
                     <Select
                         label={t('candidate:oldProvince')}
                         value={formData?.oldHomeTown}
-                        options={oldProvinceOptions}
+                        options={[
+                            {
+                                value: '',
+                                label: `${t('modalEdit:selectProvince')}`
+                            },
+                            ...filteredOldHomeTowns.map(item=>({
+                                value: item,
+                                label: item
+                            }))
+                        ]}
                         className={'select-modal province'}
                         startIcon={<IoLocation/>}
                         endIcon={<MdKeyboardArrowDown/>}
                         variant='primary'
-                        onChange={(e)=>
-                            setFormData(prev => ({
-                                ...prev,
-                                oldHomeTown: e.target.value,
-                            }))
-                        }
+                        onChange={(e)=>handleChangeOldHomeTown(e.target.value)}
                     />
                     <Input
                         label={t('candidate:address')}

@@ -1,5 +1,8 @@
 .total-users-card-icon{
-    color: #d2d2c7;
+    color: #b9b9ae;
+    border-radius: 100%;
+    background-color: #0195d91a;
+    padding: 10px;
 }
 .total-users-card-icon svg{
     width: auto;

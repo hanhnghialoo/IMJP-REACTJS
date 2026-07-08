@@ -1,14 +1,13 @@
 import './StatusDetail.css';
 import { useTranslation } from 'react-i18next';
-import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
-
+import { BsClipboard2CheckFill } from "react-icons/bs";
 
 export default function StatusDetail({candidate}){
     const {t}=useTranslation('candidate','status','common');
     return(
             <div className='candidate-expanded-status-detail expanded-enter'>
                 <div className='detail-expanded-title'>
-                    <HiOutlineClipboardDocumentList/>
+                    <BsClipboard2CheckFill/>
                     {t('candidate:status')}
                 </div>
                 <div className='detail-item'>

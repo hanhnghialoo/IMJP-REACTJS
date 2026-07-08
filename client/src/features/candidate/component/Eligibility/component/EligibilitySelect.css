@@ -24,7 +24,7 @@
     font-size: 16px;
 }
 .eligibility-option.candidate-eligible{
-    background-color: #ffffff;
+    background-color: rgb(241, 241, 241);
     border-bottom: 1px solid #d6d6d6ff;
     font-size: 16px;
 }
@@ -33,7 +33,7 @@
     font-size: 16px;
 }
 .eligibility-option.candidate-ineligible{
-    background-color: #ffffff;
+    background-color: rgb(241, 241, 241);
     border-bottom: 1px solid #d6d6d6ff;
     font-size: 16px;
 }
@@ -42,7 +42,7 @@
     font-size: 16px;
 }
 .eligibility-option.candidate-pending{
-    background-color: #ffffff;
+    background-color: rgb(241, 241, 241);
     font-size: 16px;
 }
 .eligibility-selected,

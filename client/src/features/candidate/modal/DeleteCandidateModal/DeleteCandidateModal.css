@@ -1,0 +1,125 @@
+.modal-delete-candidate-card{
+    position: fixed;
+    display: flex;
+    background: rgba(0,0,0,.5);
+    z-index: 9999;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-delete-candidate-content{
+    background-color: #ffffff;
+    width: 450px;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:
+        -8px 0 24px rgba(0,0,0,.12);
+    padding: 10px 34px 0 34px;
+}
+
+.modal-delete-candidate-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.modal-delete-candidate-divider{
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 18px 0 18px 0;
+}
+.modal-delete-candidate-middle{
+    display: flex;
+    flex-direction: column;
+    gap:14px;
+}
+.modal-delete-candidate-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    gap: 50px;
+}
+
+.modal-delete-candidate-content{
+    animation: slideDown 0.25s ease;
+}
+
+.modal-delete-candidate-title{
+    color: #119feb;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+.modal-delete-candidate-detail{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    flex-direction: column;
+    gap: 6px;
+}
+.fullname-candidate-delete{
+    font-size: 15px;
+    font-weight: 600;
+    color: #00a0e9;
+}
+.btn-close-modal-delete-candidate{
+    color: #00a0e9;
+    font-size: 28px;
+    display: flex;
+    border-radius: 100%;
+    padding: 0;
+    margin-top: -20px;
+    height: auto;
+}
+.btn-close-modal-delete-candidate:hover{
+    background: #00a0e9;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.cancel-delete-modal,
+.confirm-delete-modal{
+    width: 120px;
+    height:40px;
+    border-radius: 20px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap:8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition:
+        background 0.2s ease,
+        opacity 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+    user-select: none;
+}
+
+.modal-delete-candidate-message{
+    font-size: 16px;
+    font-weight: 500;
+}
+.modal-delete-candidate-caption{
+    font-size: 14px;
+    font-weight: 400;
+    color: #64748b;
+}
+.checkbox-delete-candidate{
+    display: flex;
+    gap: 8px;
+    color: #64748b;
+}

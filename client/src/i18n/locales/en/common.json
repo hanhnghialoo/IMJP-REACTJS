@@ -16,6 +16,8 @@
     "cancel":"Cancel",
     "save":"Save",
     "create":"Create",
+    "delete":"Delete",
+    "confirm":"Confirm",
 
     "any": "Any",
     "users":"Users",

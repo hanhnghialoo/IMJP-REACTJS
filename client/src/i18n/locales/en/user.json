@@ -24,7 +24,12 @@
     "userControlCaption":"These actions cannot be undone. Please make sure before proceeding.",
     "resetPassword":"Reset password",
     "lockAccount":"Lock account",
-    "deleteUser":"Delete user"
+    "deleteUser":"Delete user",
+
+    "profile":"Profile",
+    "account":"Account",
+    "security":"Security",
+    "activity":"Activity"
 
 
 

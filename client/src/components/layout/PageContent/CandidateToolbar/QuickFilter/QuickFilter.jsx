@@ -141,12 +141,14 @@ export default function QuickFilter({
             </div>
 
             <div className='quick-filter-content-control'>
-                <TextButton
-                    label={t('common:hideFilter')}
-                    endIcon={<MdKeyboardArrowUp/>}
-                    className='btn-hide-quick-filter'
-                    onClick={onHideQuickFilter}
-                />
+                <div className='quick-filter-top-control'>
+                    <TextButton
+                        label={t('common:hideFilter')}
+                        endIcon={<MdKeyboardArrowUp/>}
+                        className='btn-hide-quick-filter'
+                        onClick={onHideQuickFilter}
+                    />
+                </div>
                 <div className='quick-filter-description'>
                     {t('search:filterDecription')}
                 </div>

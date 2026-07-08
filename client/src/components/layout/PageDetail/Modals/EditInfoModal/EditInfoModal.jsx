@@ -17,7 +17,7 @@ import { IoLocation } from "react-icons/io5";
 
 import Select from '../../../../common/Select/Select';
 import { buildProvince } from '../../../../../features/timeline/utils/buildProvince';
-
+import useProvinceFilter from '../../../../../hooks/useProvinceFilter';
 
 export default function EditInfoModal({
     candidate,
@@ -40,11 +40,14 @@ export default function EditInfoModal({
             fullName: candidate?.info.fullName || '',
             gender: candidate?.info.gender || '',
             dateOfBirth: candidate?.info.dateOfBirth || '',
-            homeTown: candidate?.contact.newHomeTown || '',
+            newHomeTown: candidate?.contact.newHomeTown || '',
+            region: candidate?.contact.region || ''
         };
         setInitialData(data);
         setFormData(data)
-    }, [candidate])
+    }, [candidate]);
+
+    const {handleChangeNewHomeTown} = useProvinceFilter(formData, setFormData);
     return(
         <div className='modal-edit-card'>
             <div className='modal-edit-content info'>
@@ -110,19 +113,20 @@ export default function EditInfoModal({
                     />
                     <Select
                         label={t('candidate:homeTown')}
-                        value={formData?.homeTown}
-                        onChange={(e)=>setFormData(prev => (
-                            {
-                                ...prev,
-                                homeTown:e.target.value
-                            }
-                        ))}
+                        value={formData?.newHomeTown}
+                        onChange={(e)=>handleChangeNewHomeTown(e.target.value)}
                         options={buildProvince(t)}
                         className={'select-modal province'}
                         startIcon={<IoLocation/>}
                         endIcon={<MdKeyboardArrowDown/>}
                         variant='primary'
                     />
+                    {/* <Input
+                        label={t('search:region')}
+                        value={formData?.region}
+                        className='modal create-region'
+                        disabled={true}
+                    /> */}
                 </div>
 
                 <div className='modal-edit-bottom'>

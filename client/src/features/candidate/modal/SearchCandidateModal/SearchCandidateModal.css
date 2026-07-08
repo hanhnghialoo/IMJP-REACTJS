@@ -87,18 +87,18 @@
     gap:16px;
 }
 .btn.cancel-search-modal{
-    width: 134px;
+    width: 140px;
     font-size: 16px;
     font-weight: 500;
 }
 .btn.confirm-search-modal{
-    width:134px;
+    width:140px;
     font-size: 16px;
     font-weight: 500;
     gap:6px;
 }
 .btn.reset-search-modal{
-    width:134px;
+    width:140px;
     font-size: 16px;
     font-weight: 500;
     gap:6px;

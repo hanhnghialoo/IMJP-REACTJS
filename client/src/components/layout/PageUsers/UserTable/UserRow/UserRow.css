@@ -19,8 +19,8 @@
 .user-row{
     display: flex;
     justify-content: flex-start;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 15px;
 }
 .user-row.status{
     display: flex;
@@ -30,22 +30,22 @@
 .user-row.status.offline svg{
     color: #b6b4b7;
     height:20px;
-    width:16px;
+    width:20px;
 }
 .user-row.status.online svg{
     color: rgb(47, 178, 47);
     height:20px;
-    width:16px;
+    width:20px;
 }
 .user-row.status.away svg{
     color: yellow;
     height:20px;
-    width:16px;
+    width:20px;
 }
 .user-row.status.neverActive svg{
     color: red;
     height:20px;
-    width:16px;
+    width:20px;
 }
 .user-row-group:hover{
     background: #f8fbff;
@@ -64,6 +64,7 @@
 }
 .user-row.full-name{
     font-weight: 600;
+    font-size: 16px;
 }
 
 .user-row-role{
@@ -71,29 +72,30 @@
     flex-direction: row;
     align-items: center;
     gap:6px;
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 .user-row-role.admin svg{
     color: rgb(47, 178, 47);
     width: auto;
-    height: 15px;
+    height: 20px;
 }
 .user-row-role.manager svg{
     color: #2563eb;
     width: auto;
-    height: 15px;
+    height: 20px;
 }
 .user-row-role.user svg{
     color: #d2d2c7;
     width: auto;
-    height: 15px;
+    height: 20px;
 }
 .user-row.user-name,
 .user-row.phone-number,
 .user-row.space{
     font-size: 12px;
+    font-weight: 300;
     display: flex;
     align-items: center;
     gap:4px;

@@ -1,0 +1,30 @@
+.detail-control-content{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.btn-detail-control-confirm{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 60px;
+    height: 55px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    background: #f1f8fa;
+    cursor: pointer;
+}
+.btn-detail-control-confirm svg{
+    height: auto;
+    width: 20px;
+    color: #008fd1;
+}
+
+.btn-detail-control-confirm:hover{
+    background: #ffffff;
+    border:1px solid #81c8e9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    font-weight: 600;
+}

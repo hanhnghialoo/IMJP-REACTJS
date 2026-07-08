@@ -13,6 +13,10 @@
     font-size: 14px;
     font-weight: 400;
 }
+.quick-filter-top-control{
+   display: flex;
+   justify-content: flex-end;
+}
 .quick-filter-content-eligibility,
 .quick-filter-content-document,
 .quick-filter-content-exam,
