@@ -5,6 +5,11 @@
     "totalManager": "Manager",
     "totalUser": "User",
     "onlineUsers":"Online",
+    "createdDate":"Created date",
+    "statusAccount":"Status account",
+    "active":"Active",
+    "locked":"Locked",
+    "lastActivity":"Last activity",
     "online":"Online",
     "offline":"Offline",
     "lastActive":"Last active",
@@ -29,7 +34,10 @@
     "profile":"Profile",
     "account":"Account",
     "security":"Security",
-    "activity":"Activity"
+    "activity":"Activity",
+
+    "confirmEdit":"Confirm saving the changes",
+    "accountCaption":"Username and user role cannot be changed"
 
 
 

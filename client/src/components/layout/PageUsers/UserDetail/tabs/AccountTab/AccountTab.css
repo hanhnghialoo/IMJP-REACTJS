@@ -1,0 +1,54 @@
+.account-tab-user-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 12px;
+    animation: rowAppear 0.5s ease-out;
+    gap:14px;
+}
+
+.account-tab-info{
+    display: grid;
+    grid-template-columns: 150px 20px 1fr;
+}
+.account-tab-title{
+    width: 150px;
+}
+.account-tab-value{
+    color: #138dff;
+    font-weight: 600;
+}
+.account-tab-caption{
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 400;
+}
+.account-tab-info-status{
+    display: grid;
+    height: 40px;
+    align-items: center;
+    grid-template-columns: 150px 20px 1fr;
+}
+.account-tab-value-status.active{
+    background-color: rgba(181, 225, 181, 0.436);
+    color: rgb(9, 161, 9);
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #44ef55;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.account-tab-value-status.locked{
+    background-color: rgba(225, 181, 181, 0.436);
+    color: rgb(181, 16, 16);
+    width: fit-content;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ef7744;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

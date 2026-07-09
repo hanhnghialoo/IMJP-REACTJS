@@ -13,12 +13,13 @@ import { FaPhoneAlt } from "react-icons/fa";
 export default function UserRow({
     user,
     no,
-    onClick
+    onClick,
+    selectedUser
 }){
     const {t} = useTranslation();
     const activity = getUserStatus(user.lastActivityAt)
     return(
-        <div className='user-row-group'
+        <div className={`user-row-group ${selectedUser === user ? 'active' : ''}`}
             onClick={onClick}
         >
 

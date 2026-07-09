@@ -2,11 +2,13 @@ import './UserDetailTabs.css';
 
 import ProfileTab from '../tabs/ProfileTab/ProfileTab';
 import { useTranslation } from 'react-i18next';
+import AccountTab from '../tabs/AccountTab/AccountTab';
 
 export default function UserDetailTabs({
     activeTab,
     onChangeTab,
-    user
+    user,
+    setSelectedUser
 }){
     const {t} = useTranslation();
     const USER_DETAIL_TABS = [
@@ -44,6 +46,13 @@ export default function UserDetailTabs({
             <div className='user-detail-tab-content'>
                 {activeTab === 'profile' &&
                     <ProfileTab
+                        key={setSelectedUser.id}
+                        user={user}
+                    />
+                }
+                {activeTab === 'account' &&
+                    <AccountTab
+                        key={setSelectedUser.id}
                         user={user}
                     />
                 }

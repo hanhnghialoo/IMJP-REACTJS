@@ -1,16 +1,16 @@
 .page-body{
-   flex:1;
+    display: flex;
    padding: 24px;
    overflow-y: auto;
    height: auto;
+   justify-content: center;
 }
 .page-content{
     background: #ffffff;
     border-radius: 10px;
     border: 1px solid #e9e9e9;
     min-height: 100%;
-    max-width: 1600px;
-    min-width: 1260px;
+    width: 1600px;
     /*Reponsive PC right space*/
     padding: 16px 24px 24px 24px;
     display: flex;

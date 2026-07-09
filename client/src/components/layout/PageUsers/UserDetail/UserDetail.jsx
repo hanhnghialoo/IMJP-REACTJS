@@ -8,7 +8,8 @@ import UserDefaultDetail from './UserDefaultDetail';
 import UserDetailTabs from './UserDetailTabs/UserDetailTabs';
 
 export default function UserDetail({
-    user
+    user,
+    setSelectedUser
 }){
     const {t} = useTranslation();
     const [activeTab, setActiveTab] = useState('profile')
@@ -27,6 +28,7 @@ export default function UserDetail({
                             activeTab={activeTab}
                             onChangeTab={(e)=>setActiveTab(e)}
                             user={user}
+                            setSelectedUser={setSelectedUser}
                         />
                     </div>
                 : <UserDefaultDetail/>

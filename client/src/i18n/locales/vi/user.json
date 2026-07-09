@@ -5,6 +5,11 @@
     "totalManager": "Quản lý",
     "totalUser": "Người dùng",
     "onlineUsers":"Hoạt động",
+    "createdDate":"Ngày khởi tạo",
+    "statusAccount":"Trạng thái tài khoản",
+    "active":"Hoạt động",
+    "locked":"Bị khoá",
+    "lastActivity":"Hoạt động lần cuối",
     "online":"Online",
     "offline":"Offline",
     "lastActive":"Hoạt động",
@@ -28,7 +33,10 @@
     "profile":"Hồ sơ",
     "account":"Tài khoản",
     "security":"Bảo mật",
-    "activity":"Hoạt động"
+    "activity":"Hoạt động",
+
+    "confirmEdit":"Đồng ý lưu thông tin đã thay đổi",
+    "accountCaption": "Không thể thay đổi tên đăng nhập và vai trò của người dùng trong hệ thống!"
 
     
 }

@@ -72,6 +72,7 @@ export default function PageUsers(){
                                     user={user}
                                     no={(pagination.page-1)*pagination.pageSize+index+1}
                                     onClick={()=>setSelectedUser(user)}
+                                    selectedUser={selectedUser}
                                 />
                             </Fragment>
                         ))}
@@ -88,6 +89,7 @@ export default function PageUsers(){
             <div className='page-body-user-right'>
                 <UserDetail
                     user={selectedUser}
+                    setSelectedUser={selectedUser}
                 />
             </div>
 

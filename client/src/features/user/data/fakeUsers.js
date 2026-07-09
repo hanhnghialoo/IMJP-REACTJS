@@ -9,6 +9,8 @@ export const fakeUsers = [
         username:'hanhnghialo',
         role:ROLES.ADMIN,
         lastActivityAt:"2026-06-29T00:40:00Z",
+        createdAt:"2026-06-24T00:40:00Z",
+        isLocked:'false'
     },
     {
         id: 2,
@@ -18,6 +20,7 @@ export const fakeUsers = [
         username:'tranphuongdieulinh',
         role:ROLES.MANAGER,
         lastActivityAt:"2026-07-01T23:10:00Z",
+        isLocked:'true'
 
     },
     {
@@ -28,6 +31,8 @@ export const fakeUsers = [
         username:'nguyenvana',
         role:ROLES.MANAGER,
         lastActivityAt:"2026-06-25T00:40:00Z",
+        isLocked:'false'
+
     },
     {
         id: 4,
@@ -37,6 +42,8 @@ export const fakeUsers = [
         username:'nguyenvanb',
         role:ROLES.MANAGER,
         lastActivityAt:"2026-06-28T18:00:00Z",
+        isLocked:'false'
+
     },
     {
         id: 5,
@@ -45,6 +52,8 @@ export const fakeUsers = [
         phoneNumber:'0123456789',
         username:'nguyenvanc',
         role:ROLES.USER,
+        isLocked:'false'
+
     },
     {
         id: 6,
@@ -53,6 +62,8 @@ export const fakeUsers = [
         phoneNumber:'0123456789',
         username:'nguyenvand',
         role:ROLES.USER,
+        isLocked:'false'
+
     },
     {
         id: 7,
@@ -61,6 +72,8 @@ export const fakeUsers = [
         phoneNumber:'0123456789',
         username:'nguyenvand',
         role:ROLES.USER,
+        isLocked:'false'
+
     },
     {
         id: 8,
@@ -69,5 +82,7 @@ export const fakeUsers = [
         phoneNumber:'0123456789',
         username:'nguyenvand',
         role:ROLES.USER,
+        isLocked:'false'
+
     },
 ]

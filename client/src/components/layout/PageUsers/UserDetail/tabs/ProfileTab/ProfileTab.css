@@ -1,4 +1,27 @@
 .profile-tab-user-card{
-    display: flex;
+    display: grid;
+    padding: 20px 10px;
     width: 100%;
+    gap:20px;
+    animation: rowAppear 0.5s ease-out;
+    align-items: center;
+}
+.input-group.profile-user{
+    display: flex;
+    width:100%;
+}
+.input-profile-user{
+    background-color: rgb(241, 241, 241);
+}
+
+.profile-tab-user-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.btn.cancel-edit,
+.btn.save-edit{
+    min-width: 150px;;
+}
+.check-confirm-edit{
+    color: #64748b ;
 }

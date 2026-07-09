@@ -13,6 +13,10 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     animation: rowAppear 0.75s ease-out;
 }
+.user-row-group.active{
+    color: #118bfc;
+    background: #ecf5ff;
+}
 .user-row-group:last-child{
     border-bottom: none;
 }
@@ -57,7 +61,8 @@
     padding: 0;
     flex-direction: column;
     align-items: flex-start;
-    gap: var(---gap-user-info);
+    /* gap: var(---gap-user-info); */
+    line-height: 26px;
 }
 .user-row.no{
     padding-left: 12px;
