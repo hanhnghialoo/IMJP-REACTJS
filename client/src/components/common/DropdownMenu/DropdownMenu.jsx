@@ -2,7 +2,7 @@ import './DropdownMenu.css';
 
 import Button from '../Button/Button';
 import {useState, useRef, useEffect} from 'react'
-import LanguageSwitcher from '../LanguageSwitcher';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 
 function DropdownMenu({
     trigger,

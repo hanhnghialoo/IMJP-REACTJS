@@ -17,6 +17,7 @@ import viSearch from './locales/vi/search.json';
 import viRoutes from './locales/vi/routes.json';
 import viUser from './locales/vi/user.json';
 import viValidate from './locales/vi/validate.json';
+import viSupportScreen from './locales/vi/supportScreen.json';
 
 import enCommon from './locales/en/common.json';
 import enAuth from './locales/en/auth.json';
@@ -34,6 +35,8 @@ import enSearch from './locales/en/search.json';
 import enRoutes from './locales/en/routes.json';
 import enUser from './locales/en/user.json';
 import enValidate from './locales/en/validate.json'
+import enSupportScreen from './locales/en/supportScreen.json';
+
 
 i18n
     .use(initReactI18next)
@@ -56,6 +59,7 @@ i18n
                 routes: viRoutes,
                 user: viUser,
                 validate: viValidate,
+                supportScreen: viSupportScreen,
             },
             en: {
                 common: enCommon,
@@ -74,6 +78,7 @@ i18n
                 routes: enRoutes,
                 user: enUser,
                 validate: enValidate,
+                supportScreen: enSupportScreen,
             },
         },
     lng: 'vi',
@@ -94,7 +99,8 @@ i18n
         'search',
         'routes',
         'user',
-        'validate'
+        'validate',
+        'supportScreen'
     ],
     defaultNS: 'common',
     interpolation: {

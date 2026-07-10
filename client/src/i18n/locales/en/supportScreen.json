@@ -1,0 +1,6 @@
+{
+    "unsupportedScreen": "This screen size is not supported",
+    "unsupportedScreenCaption":"This system requires a desktop viewport of at least:",
+    "currentSize":"Current size",
+    "miniumSize":"Minium size"
+}

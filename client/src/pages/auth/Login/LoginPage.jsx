@@ -1,5 +1,5 @@
 import './LoginPage.css'
-import LanguageSwitcher from '../../../components/common/LanguageSwitcher';
+import LanguageSwitcher from '../../../components/common/LanguageSwitcher/LanguageSwitcher';
 import { useState } from 'react';
 import LoginForm from '../../../components/auth/LoginForm/LoginForm';
 import ForgotPasswordForm from '../../../components/auth/ForgotPasswordForm/ForgotPasswordForm';

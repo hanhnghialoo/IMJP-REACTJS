@@ -22,7 +22,7 @@ function Input({
         ${error ? 'input-error' : ''} 
         `
     return(
-        <div className={`input-group ${className}`}>
+        <div className={`input-group`}>
             {label && (
                 <label className='input-label'>
                     {label}           
