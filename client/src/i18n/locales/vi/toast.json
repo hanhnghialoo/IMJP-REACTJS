@@ -1,0 +1,11 @@
+{
+    "success":"Thành công",
+    "error":"Thất bại",
+    "warning":"Cảnh báo",
+
+    "createdCandidate":"Ứng viên đã được tạo thành công",
+    "deletedCandidate":"Đã xóa thành công ứng viên",
+    
+    "messageError":"Đã xảy ra lỗi, vui lòng thử lại"
+
+}

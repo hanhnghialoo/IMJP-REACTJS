@@ -37,7 +37,7 @@ export default function DetailSourceCard({
         setEditSource(false);
         setCurrentSource(candidate?.sourceChannel)
     }
-    const sourceData = CHANNEL_CONFIG[currentSource];
+    const sourceData = CHANNEL_CONFIG[currentSource]??CHANNEL_CONFIG.unknown;
     if(!sourceData){
         return null;
     }
@@ -78,7 +78,7 @@ export default function DetailSourceCard({
                     {!editSource
                         ?
                         <Badge
-                            label={t(`${sourceData.label}`)}
+                            label={t(`${sourceData?.label}`)}
                             startIcon={<IconBadge width='auto' height={30}/>}
                             className={'candidate-source'}
                         />

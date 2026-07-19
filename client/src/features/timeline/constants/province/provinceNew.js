@@ -2,171 +2,171 @@ export const PROVINCE_NEW = [
     {
         name: 'An Giang',
         code: 'AN_GIANG',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'Bắc Ninh',
         code: 'BAC_NINH',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Cà Mau',
         code: 'CA_MAU',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name:'Cao Bằng',
         code:'CAO_BANG',
-        region:'NORTH'
+        region:'north'
     },
     {
         name:'Cần Thơ',
         code:'CAN_THO',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name:'Đà Nẵng',
         code:'DA_NANG',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Đắk Lắk',
         code: 'DAK_LAK',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name:'Đồng Nai',
         code:'DONG_NAI',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'Đồng Tháp',
         code:'DONG_THAP',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'Điện Biên',
         code: 'DIEN_BIEN',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Gia Lai',
         code: 'GIA_LAI',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name:  'Hà Nội',
         code: 'HA_NOI',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Hà Tĩnh',
         code: 'HA_TINH',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Hải Phòng',
         code: 'HAI_PHONG',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Hưng Yên',
         code: 'HUNG_YEN',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Khánh Hòa',
         code: 'KHANH_HOA',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Lai Châu',
         code: 'LAI_CHAU',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Lâm Đồng',
         code: 'LAM_DONG',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Lạng Sơn',
         code: 'LANG_SON',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Lào Cai',
         code: 'LAO_CAI',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Nghệ An',
         code: 'NGHE_AN',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Ninh Bình',
         code: 'NINH_BINH',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Phú Thọ',
         code: 'PHU_THO',
-        region:'NORTH'
+        region:'north'
     },
     {
         name:  'Quảng Ngãi',
         code: 'QUANG_NGAI',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Quảng Ninh',
         code: 'QUANG_NINH',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Quảng Trị',
         code: 'QUANG_TRI',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Sơn La',
         code: 'SON_LA',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Tây Ninh',
         code: 'TAY_NINH',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'Thái Nguyên',
         code: 'THAI_NGUYEN',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Thanh Hóa',
         code: 'THANH_HOA',
-        region:'CENTRAL'
+        region:'central'
     },
     {
         name: 'Tuyên Quang',
         code: 'TUYEN_QUANG',
-        region:'NORTH'
+        region:'north'
     },
     {
         name: 'Vĩnh Long',
         code: 'VINH_LONG',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'TP. Hồ Chí Minh',
         code: 'TP_HO_CHI_MINH',
-        region:'SOUTH'
+        region:'south'
     },
     {
         name: 'Huế',
         code: 'HUE',
-        region:'CENTRAL'
+        region:'central'
     }
 ];

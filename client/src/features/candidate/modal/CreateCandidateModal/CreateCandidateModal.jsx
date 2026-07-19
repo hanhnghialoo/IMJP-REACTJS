@@ -1,5 +1,6 @@
 import './CreateCandidateModal.css';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 import Button from '../../../../components/common/Button/Button';
 import Input from '../../../../components/common/Input/Input';
@@ -11,7 +12,7 @@ import { buildProvinceForCreate } from '../../../timeline/utils/buildProvinceFor
 
 import { FaRegCircleXmark } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
-import { FaMars } from "react-icons/fa";
+
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { HiUserAdd } from "react-icons/hi";
 import { MdCalendarMonth } from "react-icons/md";
@@ -19,26 +20,31 @@ import { HiPhone } from "react-icons/hi2";
 import { IoLocation } from "react-icons/io5";
 import { IoCreate } from "react-icons/io5";
 
-import hasChanges from '../../../../utils/Modal/hasChanges';
 import { validateField } from '../../../../utils/Validation/validateField';
 import { validateForm } from '../../../../utils/Validation/validateForm';
 import { rulesCreateCandidateField } from './createCandidateRulesField';
 import useProvinceFilter from '../../../../hooks/useProvinceFilter';
+import { useCreateCandidate } from '../../hook/useCreateCandidate';
+import useToast from '../../../../components/common/Toast/hook/useToast';
+import { TOAST_VARIANTS } from '../../../../components/common/Toast/constants/toast.constants';
 
-export default function CreatCandidateModal({
+export default function CreateCandidateModal({
     onCloseCreateCandidate,
-    inputNameRef
+    inputNameRef,
+    onCreated,
 }){
     const {t} = useTranslation();
+    const navigate = useNavigate();
+    const {addToast} = useToast();
     const [ errors, setErrors] = useState({});
     const [ touched, setTouched] = useState({});
     const [ formCreateCandidate, setFormCreateCandidate] = useState({
         fullName: '',
-        gender: '',
+        gender: 'male',
         dateOfBirth:'',
         phone:'',
         newHomeTown:'',
-        region:''
+        region:'',
     });
     const {handleChangeNewHomeTown} = useProvinceFilter(formCreateCandidate, setFormCreateCandidate);
 
@@ -75,6 +81,66 @@ export default function CreatCandidateModal({
         ).length === 0;
     },[formCreateCandidate])
 
+    const {
+        isSubmitting,
+        submitError,
+        submitCandidate,
+    } = useCreateCandidate();
+
+    const handlePhoneChange = (e) =>{
+        const rawValue = e.target.value;
+        const phoneValue = rawValue.replace(/\D/g, '');
+        setFormCreateCandidate((currentForm)=>({
+            ...currentForm,
+            phone: phoneValue,
+        }))
+    }
+
+    const handleCreateCandidate = async() => {
+        const validationErrors = validateForm(formCreateCandidate, rulesCreateCandidateField);
+        if (Object.keys(validationErrors).length>0){
+            setErrors(validationErrors);
+            setTouched(
+                Object.keys(
+                    formCreateCandidate
+                ).reduce((result,field)=>({
+                    ...result,
+                    [field]: true,
+                }), {} )
+            );
+            return;
+        }
+
+        try {
+            const candidate = await submitCandidate(formCreateCandidate);
+            addToast({
+                title: t('toast:success'),
+                message: t('toast:createdCandidate'),
+                variant: TOAST_VARIANTS.SUCCESS,
+            })
+            onCreated?.(candidate);
+            onCloseCreateCandidate();
+            navigate(`/candidates/${candidate.id}`);
+        } catch(error){
+            const backendErrors = error.response?.data.errors;
+            if (backendErrors){
+                setErrors(backendErrors);
+                setTouched(Object.keys(
+                    backendErrors
+                ).reduce(
+                    (result,field)=>({
+                        ...result,
+                        [field]:true,
+                    }), {}
+                ))
+            }
+            addToast({
+                title: t('toast:error'),
+                message: t('toast:messageError'),
+                variant: TOAST_VARIANTS.ERROR,
+            })
+        }
+    }
     return(
         <div className='modal-create-card'>
             <div className='modal-create-content'>
@@ -109,12 +175,7 @@ export default function CreatCandidateModal({
                     <Select
                         label={t('candidate:sex')}
                         placeholder={t('modalEdit:selectGender')}
-                        onChange={(e)=>setFormCreateCandidate(prev => (
-                            {
-                                ...prev,
-                                gender:e.target.value
-                            }
-                        ))}
+                        onChange={handleChangeInput('gender')}
                         options={[
                             {
                                 value:'male',
@@ -144,7 +205,7 @@ export default function CreatCandidateModal({
                         className='modal create-phone'
                         endIcon={<HiPhone/>}
                         variant='primary'
-                        onChange={handleChangeInput('phone')}
+                        onChange={handlePhoneChange}
                     />
                     <Select
                         label={t('candidate:homeTown')}
@@ -175,6 +236,7 @@ export default function CreatCandidateModal({
                         icon={<HiUserAdd/>}
                         disabled={!isFormValid}
                         className='save-create-modal'
+                        onClick={handleCreateCandidate}
                     />
                 </div>
             </div>

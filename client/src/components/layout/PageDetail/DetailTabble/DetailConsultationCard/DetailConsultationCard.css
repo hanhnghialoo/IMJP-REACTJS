@@ -98,3 +98,7 @@
     font-weight: 600;
 }
 
+.badge-candidate-empty-card.detail{
+    opacity: 0.3;
+}
+

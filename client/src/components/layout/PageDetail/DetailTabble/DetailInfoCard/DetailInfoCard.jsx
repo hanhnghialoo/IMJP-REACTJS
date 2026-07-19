@@ -5,6 +5,7 @@ import Button from '../../../../common/Button/Button';
 import { useTranslation } from 'react-i18next';
 import usePermission from '../../../../../features/auth/hook/usePermission';
 import { getNameProvince } from '../../../../../features/timeline/utils/getNameProvince';
+import { formatDateOfBirth } from '../../../../../utils/formatDateOfBirth';
 
 import { RiEdit2Fill } from "react-icons/ri";
 import { FaUserCircle } from "react-icons/fa";
@@ -48,7 +49,7 @@ export default function DetailInfoCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {t(`candidate:${candidate?.info.dateOfBirth}`)}
+                    {formatDateOfBirth(candidate?.info.dateOfBirth)}
                 </span>
             </div>
             <div className='detail-item-card'>

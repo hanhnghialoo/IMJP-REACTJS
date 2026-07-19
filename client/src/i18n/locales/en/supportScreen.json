@@ -2,5 +2,7 @@
     "unsupportedScreen": "This screen size is not supported",
     "unsupportedScreenCaption":"This system requires a desktop viewport of at least:",
     "currentSize":"Current size",
-    "miniumSize":"Minium size"
+    "miniumSize":"Minium size",
+    "unsupportedRequest":"Please resize your screen or reduce your browser's zoom level for the best experience"
+
 }

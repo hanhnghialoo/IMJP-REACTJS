@@ -33,10 +33,10 @@ export default function EditDocumentModal({
             submissionDate: candidate?.document?.submissionDate || '',
             submissionMethod: candidate?.document?.submissionMethod || '',
             recordedDate: candidate?.document?.recordedDate || '',
-            note: candidate?.document.note || '',
-            status: candidate?.status.status || '',
-            detail: candidate?.status.detail || '',
-            noteStatus: candidate?.status.noteStatus || '',
+            note: candidate?.documen?.note || '',
+            status: candidate?.status?.status || '',
+            detail: candidate?.status?.detail || '',
+            noteStatus: candidate?.status?.noteStatus || '',
         }
         setInitialData(data);
         setFormData(data);

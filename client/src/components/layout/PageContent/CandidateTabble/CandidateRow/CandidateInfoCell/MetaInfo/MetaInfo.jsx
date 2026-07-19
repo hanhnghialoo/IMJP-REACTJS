@@ -4,6 +4,7 @@ import Badge from '../../../../../../common/Badge/Badge';
 import { getNameProvince } from '../../../../../../../features/timeline/utils/getNameProvince';
 
 import { IoMale, IoFemale } from "react-icons/io5";
+import { formatDateOfBirth } from '../../../../../../../utils/formatDateOfBirth';
 
 
 export default function MetaInfo({candidate}){
@@ -15,7 +16,7 @@ export default function MetaInfo({candidate}){
                 className={'gender'}
             />
             <Badge
-                label={candidate?.info.dateOfBirth}
+                label={formatDateOfBirth(candidate?.info.dateOfBirth)}
                 className={'dateOfBirth'}
             />
             <Badge

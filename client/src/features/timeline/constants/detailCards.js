@@ -7,6 +7,7 @@ import EditDocumentModal from "../../../components/layout/PageDetail/Modals/Edit
 import EditExamModal from "../../../components/layout/PageDetail/Modals/EditExamModal/EditExamModal";
 import EditStatusModal from "../../../components/layout/PageDetail/Modals/EditStatusModal/EditStatusModal";
 import { DETAIL_MODAL_TYPES } from "./detailModalTypes";
+import { TimelineStep } from "./timelineSteps";
 
 export const DETAIL_CARDS = {
     consulting:{

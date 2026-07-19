@@ -18,9 +18,9 @@ export default function DetailResultCard({
     const {canEditCandidate} = usePermission();
     const resultData = MAPPING_CONFIG[candidate?.result?.result];
         const labelBadge = resultData?.label;
-        if(!resultData){
-            return null;
-        }
+        // if(!resultData){
+        //     return null;
+        // }
 
     return(
         <div className='detail-result-card'>
@@ -37,15 +37,21 @@ export default function DetailResultCard({
                     onClick={onEdit}
                 />
             }
-
-            <Badge
-                startIcon={
-                    <GoDotFill
-                    className={`${labelBadge}`} 
-                />}
-                label={t(`${labelBadge}`)}
-                className={`detail-${labelBadge}`}
-            />
+            {resultData && labelBadge ?
+                <Badge
+                    startIcon={
+                        <GoDotFill
+                        className={`${labelBadge}`} 
+                    />}
+                    label={t(`${labelBadge}`)}
+                    className={`detail-${labelBadge}`}
+                />
+                : 
+                <Badge
+                    label={t('common:empty')}
+                    className={'detail-common:empty'}
+                />
+            }
 
             <div className='detail-item-card result-reason'>
                 <span className='detail-label-card'>

@@ -13,6 +13,8 @@ import { IoFilterSharp } from "react-icons/io5";
 
 import { useTranslation } from 'react-i18next';
 import usePermission from '../../../../features/auth/hook/usePermission';
+import useDebounce from '../../../../hooks/useDebounce';
+import { useEffect, useRef } from 'react';
 
 function CandidateToolbar({
     onCreateCandidate,
@@ -24,6 +26,7 @@ function CandidateToolbar({
 }){
     const {t} = useTranslation('candidateToolbar');
     const {canCreateCandidate} = usePermission();
+
     return(
         <div className='candidate-toolbar-content'>
             <Button

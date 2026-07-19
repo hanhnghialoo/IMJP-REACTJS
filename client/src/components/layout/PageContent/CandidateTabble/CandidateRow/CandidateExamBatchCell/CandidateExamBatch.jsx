@@ -8,7 +8,7 @@ function CandidateExamBatch({candidate}){
     const {t} = useTranslation('common');
     return(
         <div className='candidate-exam-batch'>
-            {candidate?.result.batchCode !=='' ?
+            {candidate.result.batchCode !=='' ?
                 <Badge
                     label={candidate?.result.batchCode}
                     className='candidate-exam-batch'

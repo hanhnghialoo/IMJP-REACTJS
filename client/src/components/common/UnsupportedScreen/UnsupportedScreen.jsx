@@ -45,6 +45,9 @@ export default function UnsupportedScreen({
                         />
                         <div className='unsupported-caption-left'>
                             {t('supportScreen:currentSize')}
+                            <div className='unsupported-current-size'>
+                                {width}x{height}
+                            </div>
                         </div>
                     </div>
                      <div className='unsupported-request-right'>
@@ -53,10 +56,16 @@ export default function UnsupportedScreen({
                         />
                         <div className='unsupported-caption-right'>
                             {t('supportScreen:miniumSize')}
+                            <div className='unsupported-current-size'>
+                                {minWidth}x{minHeight}
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div className='unsupported-request-bottom'>
+                    {t('supportScreen:unsupportedRequest')}
+                </div>
             </div>
         </div>
     )

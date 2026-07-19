@@ -1,6 +1,7 @@
 import './DeleteCandidateModal.css';
 
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 import { FaRegCircleXmark } from "react-icons/fa6";
 import { MdDelete } from "react-icons/md";
@@ -9,13 +10,46 @@ import { useState } from 'react';
 
 import Button from '../../../../components/common/Button/Button';
 import Checkbox from '../../../../components/common/Checkbox/Checkbox';
+import useDeleteCandidate from '../../hook/useDeleteCandidate';
+import useToast from '../../../../components/common/Toast/hook/useToast';
 
 export default function DeleteCandidateModal({
     onCloseDeleteCandidateModal,
     candidate
 }){
     const {t} = useTranslation('');
+    const navigate = useNavigate();
     const [isChecked, setIsChecked] = useState(false);
+    const {
+        isDeleting,
+        deleteCandidate,
+    } = useDeleteCandidate();
+    const {addToast} = useToast();
+    async function handleClickDeleteCandidate(){
+        const candidateId = candidate?.id;
+        if (!candidateId || isDeleting || !isChecked){
+            return;
+        }
+        try {
+            await deleteCandidate(candidateId);
+            addToast({
+                title: t('toast:success'),
+                message: t('toast:deletedCandidate'),
+                variant: 'success'
+            });
+            onCloseDeleteCandidateModal?.();
+            navigate('/candidates', {
+                replace: true,
+            });
+        } catch(error){
+            addToast({
+                title: t('toast:error'),
+                message: t('toast:messageError'),
+                variant: 'error'
+            });
+        }
+    }
+
     return(
         <div className='modal-delete-candidate-card'>
 
@@ -28,6 +62,7 @@ export default function DeleteCandidateModal({
                         icon={<FaRegCircleXmark/>}
                         className='btn-close-modal-delete-candidate'
                         onClick={onCloseDeleteCandidateModal}
+                        disabled={isDeleting}
                     />
                 </div>
 
@@ -65,7 +100,8 @@ export default function DeleteCandidateModal({
                         variant='primary'
                         icon={<MdDelete/>}
                         className='confirm-delete-modal'
-                        disabled={!isChecked}
+                        disabled={!isChecked || isDeleting || !candidate?.id}
+                        onClick={handleClickDeleteCandidate}
                     />
                 </div>
             </div>

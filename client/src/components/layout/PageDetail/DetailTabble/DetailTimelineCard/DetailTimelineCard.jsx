@@ -41,7 +41,8 @@ export default function DetailTimelineCard({
                                     ${step.status}
                                     ${activeCard === step.id ? 'active-view' : ''}
                                 `}
-                        onClick={()=>onCardChange(`${step.id}`)}
+                        onClick={()=>{
+                            onCardChange(`${step.id}`)}}
                     >
                         <div className='detail-timeline-left'>
                             {index < timeline.length - 1 && (

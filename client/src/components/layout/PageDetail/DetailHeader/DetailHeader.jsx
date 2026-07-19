@@ -16,7 +16,7 @@ function DetailHeader({candidate}){
         <div className='detail-title'>
             <TextButton
                 label={t('candidateToolbar:candidateList')}
-                icon={<IoArrowUndoCircleSharp/>}
+                startIcon={<IoArrowUndoCircleSharp/>}
                 className='text-title-detail'
                 onClick={()=>handleClickBack()}
             />

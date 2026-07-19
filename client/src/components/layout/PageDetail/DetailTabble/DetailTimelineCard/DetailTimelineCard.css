@@ -29,6 +29,7 @@
     gap: 12px;
     cursor: pointer;
     padding: 10px 0 10px 0;
+    min-height: 66px;
 }
 .detail-timeline-left{
     position: relative;

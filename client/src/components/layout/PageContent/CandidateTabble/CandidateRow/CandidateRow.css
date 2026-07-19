@@ -77,7 +77,7 @@
 @media (max-width: 1366px){
     :root{
         --candidate-row-height: 85px;
-        --candidate-table-height: 445px;
+        --candidate-table-height: 460px;
 
         --candidate-col-no: 40px;
         --candidate-col-info: 220px;
@@ -90,7 +90,7 @@
 @media (min-width: 1367px) and (max-width: 1600px){
     :root{
         --candidate-row-height: 85px;
-        --candidate-table-height: 545px;
+        --candidate-table-height: 575px;
 
         --candidate-col-no: 40px;
         --candidate-col-info: 220px;
@@ -103,7 +103,7 @@
 @media (min-width: 1601px){
     :root{
         --candidate-row-height: 85px;
-        --candidate-table-height: 720px;
+        --candidate-table-height: 750px;
 
         --candidate-col-no: 60px;
         --candidate-col-info: 250px;

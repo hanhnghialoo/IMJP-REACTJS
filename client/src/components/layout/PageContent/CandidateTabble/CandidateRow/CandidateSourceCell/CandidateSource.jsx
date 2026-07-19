@@ -9,17 +9,29 @@ function CandidateSource({candidate}){
     const {t}= useTranslation('sourceChannel')
     const sourceData = CHANNEL_CONFIG[candidate.sourceChannel];
     if(!sourceData){
-        return null;
+        return(
+            <Badge
+                label={t('common:empty')}
+                className='candidate-source-empty'
+            />
+        );
     }
     const IconBadge = sourceData.icon;
 
     return(
         <div className='candidate-source'  data-tooltip={t(`${sourceData.label}`)}>
-            <Badge
-                // label={t(`${sourceData.label}`)}
-                startIcon={<IconBadge width='auto' height={40}/>}
-                className={'candidate-source'}
-            />
+            {candidate.sourceChannel !== ''?
+                <Badge
+                    // label={t(`${sourceData.label}`)}
+                    startIcon={<IconBadge width='auto' height={40}/>}
+                    className={'candidate-source'}
+                />
+                :
+                <Badge
+                    label={t('common:empty')}
+                    className='candidate-source-empty'
+                />
+            }
         </div>
     )
 }

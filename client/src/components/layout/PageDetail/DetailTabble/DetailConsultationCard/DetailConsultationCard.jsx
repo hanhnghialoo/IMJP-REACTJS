@@ -99,12 +99,17 @@ export default function DetailConsultationCard({
                             startIcon={<GoXCircleFill/>}
                             className={'candidate-ineligible-card detail'}
                         />
-                    :
+                    : candidate?.eligibility.eligibility === 'pending'?
                         <Badge
                             label={t('eligibility:pending')}
                             startIcon={<TiWarning/>}
                             className={'candidate-pending-card detail'}
                         />
+                            : 
+                                <Badge
+                                    label={t('common:empty')}
+                                    className={'candidate-empty-card detail'}                            
+                                />  
                     }  
                 </span>
             </div>

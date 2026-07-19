@@ -9,6 +9,8 @@
     "pending":"Pending",
     "rejected":"Rejected",
     "warning":"Warning",
-    "timelineNote":"Click on the timeline column to view detailed information."
+    "timelineNote":"Click on the timeline column to view detailed information.",
+    "waitingApplication":"Waiting consultaion"
+
 
 }

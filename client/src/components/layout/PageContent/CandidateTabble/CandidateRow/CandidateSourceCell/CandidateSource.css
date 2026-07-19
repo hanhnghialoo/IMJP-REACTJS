@@ -30,3 +30,6 @@
     opacity: 1;
     visibility: visible;
 }
+.badge-candidate-source-empty{
+    opacity: 0.3;
+}

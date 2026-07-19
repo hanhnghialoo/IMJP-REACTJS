@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    animation: cardFadeIn 1s ease;
 }
 .btn-detail-control-confirm{
     display: flex;

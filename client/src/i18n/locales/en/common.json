@@ -27,7 +27,10 @@
     "sortByNew":"Sort by newest",
     "sortByOld":"Sort by oldest",
     "hideFilter":"Hide filter",
-    "apply":"Apply"
+    "apply":"Apply",
+
+    "loading":"Loading..."
+
 
 
 

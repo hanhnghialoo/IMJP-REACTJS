@@ -1,0 +1,10 @@
+{
+    "success":"Success",
+    "error":"Error",
+    "warning":"Warning",
+
+    "createdCandidate":"The candidate has been created successfully",
+    "deletedCandidate":"The candidate has been deleted successfully",
+
+    "messageError":"An error occurred. Please try again"
+}

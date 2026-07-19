@@ -6,6 +6,7 @@ import ColabIcon from "../component/ColabIcon";
 import CanthoIcon from "../component/CanthoIcon";
 import SanGDVLIcon from "../component/SanGDVLIcon";
 import TTSIcon from "../component/TtsIcon";
+import UnknownIcon from "../component/Unknown";
 
 export const CHANNEL_CONFIG = {
     Facebook: {
@@ -39,5 +40,9 @@ export const CHANNEL_CONFIG = {
     TTS: {
         label: 'sourceChannel:internReferral',
         icon: TTSIcon,
+    },
+    Unknown: {
+        label:'sourceChannel:unknown',
+        icon: UnknownIcon,
     }
 }

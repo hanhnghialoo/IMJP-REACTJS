@@ -9,5 +9,6 @@
     "pending":"Chưa thực hiện",
     "rejected":"Từ chối",
     "warning":"Cảnh báo",
-    "timelineNote":"Nhấn vào cột tiến trình để xem thông tin chi tiết."
+    "timelineNote":"Nhấn vào cột tiến trình để xem thông tin chi tiết.",
+    "waitingApplication":"Chờ tư vấn"
 }

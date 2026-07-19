@@ -1,6 +1,7 @@
 {
     "unsupportedScreen": "Màn hình chưa được hỗ trợ",
-    "unsupportedScreenCaption":"Hệ thống hiện chỉ hỗ trợ máy tính để bàn có vùng hiện thị tối thiểu:",
+    "unsupportedScreenCaption":"Hệ thống hiện chỉ hỗ trợ máy tính để bàn có vùng hiển thị tối thiểu:",
     "currentSize":"Kích thước hiện tại",
-    "miniumSize":"Kích thước tối thiểu"
+    "miniumSize":"Kích thước tối thiểu",
+    "unsupportedRequest":"Vui lòng thay đổi kích thước màn hình hoặc giảm tỷ lệ thu phóng của trình duyệt để có trải nghiệm tốt nhất"
 }

@@ -18,6 +18,7 @@ import viRoutes from './locales/vi/routes.json';
 import viUser from './locales/vi/user.json';
 import viValidate from './locales/vi/validate.json';
 import viSupportScreen from './locales/vi/supportScreen.json';
+import viToast from './locales/vi/toast.json';
 
 import enCommon from './locales/en/common.json';
 import enAuth from './locales/en/auth.json';
@@ -36,6 +37,7 @@ import enRoutes from './locales/en/routes.json';
 import enUser from './locales/en/user.json';
 import enValidate from './locales/en/validate.json'
 import enSupportScreen from './locales/en/supportScreen.json';
+import enToast from './locales/en/toast.json';
 
 
 i18n
@@ -60,6 +62,7 @@ i18n
                 user: viUser,
                 validate: viValidate,
                 supportScreen: viSupportScreen,
+                toast: viToast,
             },
             en: {
                 common: enCommon,
@@ -79,6 +82,7 @@ i18n
                 user: enUser,
                 validate: enValidate,
                 supportScreen: enSupportScreen,
+                toast: enToast,
             },
         },
     lng: 'vi',
@@ -100,7 +104,8 @@ i18n
         'routes',
         'user',
         'validate',
-        'supportScreen'
+        'supportScreen',
+        'toast'
     ],
     defaultNS: 'common',
     interpolation: {

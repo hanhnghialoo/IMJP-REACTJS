@@ -10,6 +10,7 @@ import { RiEdit2Fill } from "react-icons/ri";
 import { IoDocuments } from "react-icons/io5";
 import { MdDragIndicator } from "react-icons/md";
 import { STATUS_CONFIG } from '../../../../../assets/icon/configs/statusConfigs';
+import { formatDateOfBirth } from '../../../../../utils/formatDateOfBirth';
 
 export default function DetailDocumentCard({
     candidate,
@@ -19,9 +20,9 @@ export default function DetailDocumentCard({
     const {t} = useTranslation('');
     const {canEditCandidate} = usePermission();
     const resultData = STATUS_CONFIG[candidate?.status?.status];
-    if(!resultData){
-        return null;
-    }
+    // if(!resultData){
+    //     return null;
+    // }
     const labelBadge = resultData?.label;
     const IconBadge = resultData?.icon;
     return(
@@ -30,18 +31,25 @@ export default function DetailDocumentCard({
                 <MdDragIndicator/>
                 {t('candidate:status')}
             </div>
-            <Badge
-                startIcon={<IconBadge/>}
-                className={`detail-${labelBadge}`}
-                label={t(`${labelBadge}`)}
-            />
+            {resultData && IconBadge ? (
+                <Badge
+                    startIcon={<IconBadge/>}
+                    className={`detail-${labelBadge}`}
+                    label={t(`${labelBadge}`)}
+                />
+            ) : 
+                <Badge
+                    label={t('common:empty')}
+                    className='detail-common:empty'
+                />
+            }
             <div className='detail-item-card status-detail'>
                 <span className='detail-label-card'>
                     {t('common:detail')}
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {candidate?.status.detail}
+                    {candidate?.status?.detail}
                 </span>
             </div>
             <div className='detail-item-card status-note'>
@@ -50,7 +58,7 @@ export default function DetailDocumentCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {candidate?.status.noteStatus}
+                    {candidate?.status?.noteStatus}
                 </span>
             </div>
 
@@ -75,7 +83,7 @@ export default function DetailDocumentCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {t(`${candidate?.document.documentStatus}`)}
+                    {t(`${candidate?.document?.documentStatus}`)}
                 </span>
             </div>
 
@@ -85,7 +93,7 @@ export default function DetailDocumentCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {t(`${candidate?.document.submissionDate}`)}
+                    {formatDateOfBirth(candidate?.document?.submissionDate)}
                 </span>
             </div>
 
@@ -95,7 +103,7 @@ export default function DetailDocumentCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {t(`candidate:${candidate?.document.submissionMethod}`)}
+                    {t(`candidate:${candidate?.document?.submissionMethod}`)}
                 </span>
             </div>
 
@@ -105,7 +113,7 @@ export default function DetailDocumentCard({
                 </span>
                 <span className='detail-separator-card'>:</span>
                 <span className='detail-value-card'>
-                    {candidate?.document.recordedDate}
+                    {candidate?.document?.recordedDate}
                 </span>
             </div>
         </div>

@@ -26,11 +26,11 @@ export default function DetailControl({
                 icon={<LuCalendarCheck/>}
                 className='btn-detail-control-confirm'
             />
-            <Button
+            {/* <Button
                 label={t('candidateToolbar:confirmTimeExam')}
                 icon={<LuCalendarCheck/>}
                 className='btn-detail-control-confirm'
-            />
+            /> */}
             <Button
                 label={t('candidateToolbar:setPlan')}
                 icon={<LuCalendarClock/>}
@@ -41,11 +41,11 @@ export default function DetailControl({
                 icon={<IoCreateOutline/>}
                 className='btn-detail-control-confirm'
             />
-            <Button
+            {/* <Button
                 label={t('common:other')}
                 icon={<IoIosMore/>}
                 className='btn-detail-control-confirm'
-            />
+            /> */}
         </div>
     )
 }

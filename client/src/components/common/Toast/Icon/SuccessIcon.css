@@ -1,0 +1,138 @@
+.success-toast-icon {
+    position: relative;
+
+    width: 84px;
+    height: 84px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.success-toast-icon__glow {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(52, 199, 89, 0.26) 0%,
+            rgba(52, 199, 89, 0.13) 45%,
+            rgba(52, 199, 89, 0) 72%
+        );
+
+    animation: successGlowPulse 2.4s ease-in-out infinite;
+}
+
+.success-toast-icon__animated {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform-origin: center;
+
+    animation:
+        successIconPop 0.45s ease-out both,
+        successIconShake 0.55s 0.72s ease-in-out both;
+}
+
+.success-toast-icon__svg {
+    width: 60px;
+    height: 60px;
+
+    display: block;
+    overflow: visible;
+}
+
+.success-toast-icon__circle {
+    fill: #34c759;
+
+    filter:
+        drop-shadow(
+            0 8px 14px rgba(52, 199, 89, 0.32)
+        );
+}
+
+.success-toast-icon__check {
+    stroke: #ffffff;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+
+    animation:
+        successCheckDraw 0.42s 0.25s
+        cubic-bezier(0.65, 0, 0.35, 1)
+        forwards;
+}
+
+@keyframes successCheckDraw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes successIconPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.55);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes successIconShake {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    20% {
+        transform: rotate(-7deg) scale(1.04);
+    }
+
+    40% {
+        transform: rotate(6deg) scale(1.04);
+    }
+
+    60% {
+        transform: rotate(-4deg) scale(1.02);
+    }
+
+    80% {
+        transform: rotate(2deg) scale(1.01);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+@keyframes successGlowPulse {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(0.94);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}

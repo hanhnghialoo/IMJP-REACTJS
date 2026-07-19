@@ -1,0 +1,152 @@
+.error-toast-icon {
+    position: relative;
+
+    width: 84px;
+    height: 84px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.error-toast-icon__glow {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 59, 48, 0.28) 0%,
+            rgba(255, 59, 48, 0.14) 45%,
+            rgba(255, 59, 48, 0) 72%
+        );
+
+    animation:
+        errorGlowPulse 2.4s
+        ease-in-out infinite;
+}
+
+.error-toast-icon__animated {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform-origin: center;
+
+    animation:
+        errorIconPop 0.45s ease-out both,
+        errorIconShake 0.55s 0.72s ease-in-out both;
+}
+
+.error-toast-icon__svg {
+    width: 60px;
+    height: 60px;
+
+    display: block;
+    overflow: visible;
+}
+
+.error-toast-icon__circle {
+    fill: #ff3b30;
+
+    filter:
+        drop-shadow(
+            0 8px 14px rgba(255, 59, 48, 0.32)
+        );
+}
+
+.error-toast-icon__line {
+    stroke: #ffffff;
+    stroke-width: 5;
+
+    stroke-linecap: round;
+
+    stroke-dasharray: 23;
+    stroke-dashoffset: 23;
+}
+
+.error-toast-icon__line--first {
+    animation:
+        errorLineDraw 0.25s 0.25s
+        cubic-bezier(0.65, 0, 0.35, 1)
+        forwards;
+}
+
+.error-toast-icon__line--second {
+    animation:
+        errorLineDraw 0.25s 0.45s
+        cubic-bezier(0.65, 0, 0.35, 1)
+        forwards;
+}
+
+@keyframes errorLineDraw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes errorIconPop {
+    0% {
+        opacity: 0;
+        transform: scale(0.55);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes errorIconShake {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    18% {
+        transform: translateX(-5px) rotate(-4deg);
+    }
+
+    36% {
+        transform: translateX(5px) rotate(4deg);
+    }
+
+    54% {
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    72% {
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    88% {
+        transform: translateX(-1px) rotate(-1deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@keyframes errorGlowPulse {
+    0%,
+    100% {
+        opacity: 0.7;
+        transform: scale(0.94);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.08);
+    }
+}

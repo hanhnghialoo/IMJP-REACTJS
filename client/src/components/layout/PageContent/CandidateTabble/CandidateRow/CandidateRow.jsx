@@ -57,7 +57,7 @@ function CandidateRow({
                 candidate={candidate}
                 onExpand={onExpand}
                 isExpanded={isExpanded(
-                    candidate.id,
+                    candidate._id,
                     'eligibility'
                 )}
             /> */}
